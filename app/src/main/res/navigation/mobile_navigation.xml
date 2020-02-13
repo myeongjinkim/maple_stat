@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_stat"
-        android:name="com.example.maple_stat.ui.home.StatFragment"
+        android:name="com.example.maple_stat.ui.stat.StatFragment"
         android:label="@string/title_stat"
         tools:layout="@layout/fragment_stat" />
 
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_setting"
-        android:name="com.example.maple_stat.ui.notifications.SettingFragment"
+        android:name="com.example.maple_stat.ui.setting.SettingFragment"
         android:label="@string/title_setting"
         tools:layout="@layout/fragment_setting" />
 </navigation>

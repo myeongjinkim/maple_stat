@@ -1,4 +1,4 @@
-package com.example.maple_stat.ui.notifications;
+package com.example.maple_stat.ui.setting;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
