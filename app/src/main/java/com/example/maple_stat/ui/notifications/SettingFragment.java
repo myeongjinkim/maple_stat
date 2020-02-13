@@ -1,4 +1,4 @@
-package com.example.maple_stat.ui.home;
+package com.example.maple_stat.ui.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.maple_stat.R;
 
-public class HomeFragment extends Fragment {
+public class SettingFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private SettingViewModel settingViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
-        homeViewModel.getText().observe(this, new Observer<String>() {
+        settingViewModel =
+                ViewModelProviders.of(this).get(SettingViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_setting, container, false);
+        final TextView textView = root.findViewById(R.id.text_setting);
+        settingViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

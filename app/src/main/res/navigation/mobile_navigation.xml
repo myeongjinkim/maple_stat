@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_stat">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.maple_stat.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_stat"
+        android:name="com.example.maple_stat.ui.home.StatFragment"
+        android:label="@string/title_stat"
+        tools:layout="@layout/fragment_stat" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.maple_stat.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_efficiency"
+        android:name="com.example.maple_stat.ui.efficiency.EfficiencyFragment"
+        android:label="@string/title_efficiency"
+        tools:layout="@layout/fragment_efficiency" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.maple_stat.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_setting"
+        android:name="com.example.maple_stat.ui.notifications.SettingFragment"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_setting" />
 </navigation>

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">maple_stat</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_stat">내 스탯</string>
+    <string name="title_efficiency">스탯 효율</string>
+    <string name="title_setting">스펙 설정</string>
 </resources>
