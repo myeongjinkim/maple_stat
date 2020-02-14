@@ -23,13 +23,7 @@ public class StatFragment extends Fragment {
         statViewModel =
                 ViewModelProviders.of(this).get(StatViewModel.class);
         View root = inflater.inflate(R.layout.fragment_stat, container, false);
-        final TextView textView = root.findViewById(R.id.text_stat);
-        statViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }
