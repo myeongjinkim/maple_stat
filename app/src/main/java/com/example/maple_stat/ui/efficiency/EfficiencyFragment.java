@@ -23,13 +23,7 @@ public class EfficiencyFragment extends Fragment {
         efficiencyViewModel =
                 ViewModelProviders.of(this).get(EfficiencyViewModel.class);
         View root = inflater.inflate(R.layout.fragment_efficiency, container, false);
-        final TextView textView = root.findViewById(R.id.text_efficiency);
-        efficiencyViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }
