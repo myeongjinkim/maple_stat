@@ -24,20 +24,20 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="3sp"
                 android:background="#FFFFFF"
+                android:shrinkColumns="*"
                 android:stretchColumns="*">
 
                 <TableRow
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
                     android:background="#AAAAAA">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="스공"
@@ -45,30 +45,27 @@
                         android:textSize="20sp" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="3"
-                        android:layout_weight="1"
+                        android:layout_weight="3"
                         android:background="#FFFFFF"
                         android:gravity="center"
                         android:text="0"
                         android:textSize="20sp" />
                 </TableRow>
 
-
                 <TableRow
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
                     android:background="#AAAAAA">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="vs스우 스공"
@@ -76,11 +73,10 @@
                         android:textSize="15sp" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="3"
-                        android:layout_weight="1"
+                        android:layout_weight="3"
                         android:background="#FFFFFF"
                         android:gravity="center"
                         android:text="0"
@@ -88,17 +84,16 @@
                 </TableRow>
 
                 <TableRow
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
                     android:background="#AAAAAA">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="주스텟"
@@ -106,10 +101,9 @@
                         android:textSize="20sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -121,10 +115,9 @@
                         android:digits="0123456789"/>
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="부스텟"
@@ -132,10 +125,9 @@
                         android:textSize="20sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -148,17 +140,16 @@
                 </TableRow>
 
                 <TableRow
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
                     android:background="#AAAAAA">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="주스텟퍼"
@@ -166,10 +157,9 @@
                         android:textSize="20sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -181,10 +171,9 @@
                         android:digits="0123456789"/>
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="올스텟퍼"
@@ -192,10 +181,9 @@
                         android:textSize="20sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -208,17 +196,16 @@
                 </TableRow>
 
                 <TableRow
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
                     android:background="#AAAAAA">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="10렙당 스텟"
@@ -226,10 +213,9 @@
                         android:textSize="15sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -241,10 +227,9 @@
                         android:digits="0123456789"/>
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="공격력"
@@ -252,10 +237,9 @@
                         android:textSize="20sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -268,17 +252,16 @@
                 </TableRow>
 
                 <TableRow
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
                     android:background="#AAAAAA">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="공퍼"
@@ -286,10 +269,9 @@
                         android:textSize="20sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -301,10 +283,9 @@
                         android:digits="0123456789"/>
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="방무"
@@ -312,10 +293,9 @@
                         android:textSize="20sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -328,17 +308,16 @@
                 </TableRow>
 
                 <TableRow
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
                     android:background="#AAAAAA">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="데미지"
@@ -346,10 +325,9 @@
                         android:textSize="20sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -361,10 +339,9 @@
                         android:digits="0123456789"/>
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="보공"
@@ -372,10 +349,9 @@
                         android:textSize="20sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -388,17 +364,16 @@
                 </TableRow>
 
                 <TableRow
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
                     android:background="#AAAAAA">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="크뎀"
@@ -406,10 +381,9 @@
                         android:textSize="20sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -421,10 +395,9 @@
                         android:digits="0123456789"/>
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="크확"
@@ -432,10 +405,9 @@
                         android:textSize="20sp" />
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
-                        android:layout_span="1"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
                         android:gravity="center"
@@ -445,6 +417,26 @@
                         android:maxLength="5"
                         android:inputType="number"
                         android:digits="0123456789"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="확인"
+                        android:textColor="#FFFFFF"
+                        android:background="#AAAAAA"
+                        android:textSize="20sp" />
+
                 </TableRow>
 
 
