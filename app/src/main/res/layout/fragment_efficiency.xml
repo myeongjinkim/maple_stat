@@ -18,391 +18,395 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="true">
-            <LinearLayout
+
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TableLayout
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp"
+                android:background="#FFFFFF"
+                android:stretchColumns="*">
+
+                <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
                     android:layout_margin="3sp"
-                    android:background="#FFFFFF"
-                    android:stretchColumns="*">
+                    android:layout_weight="1"
+                    android:background="#AAAAAA">
 
-                    <TableRow
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
+                        android:layout_span="1"
                         android:layout_weight="1"
-                        android:background="#AAAAAA">
+                        android:gravity="center"
+                        android:text="스공"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="스공 상승"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="3"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-                    </TableRow>
-
-                    <TableRow
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
+                        android:layout_span="3"
                         android:layout_weight="1"
-                        android:background="#AAAAAA">
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+                </TableRow>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="vs스우 스공 상승"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="3"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-                    </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="#AAAAAA">
 
-                    <TableRow
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
+                        android:layout_span="1"
                         android:layout_weight="1"
-                        android:background="#AAAAAA">
+                        android:gravity="center"
+                        android:text="vs스우 스공"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="주스텟"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="부스텟"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-                    </TableRow>
-
-                    <TableRow
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
+                        android:layout_span="3"
                         android:layout_weight="1"
-                        android:background="#AAAAAA">
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+                </TableRow>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="주스텟퍼"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="#AAAAAA">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="올스텟퍼"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-                    </TableRow>
-
-                    <TableRow
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
+                        android:layout_span="1"
                         android:layout_weight="1"
-                        android:background="#AAAAAA">
+                        android:gravity="center"
+                        android:text="주스텟"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="10레벨당스텟"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="공격력"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-                    </TableRow>
-
-                    <TableRow
+                    <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
+                        android:layout_span="1"
                         android:layout_weight="1"
-                        android:background="#AAAAAA">
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:selectAllOnFocus="true"
+                        android:textSize="20sp"
+                        android:maxLength="5"
+                        android:inputType="number"
+                        android:digits="0123456789"/>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="공퍼"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="방무"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-                    </TableRow>
-
-                    <TableRow
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
+                        android:layout_span="1"
                         android:layout_weight="1"
-                        android:background="#AAAAAA">
+                        android:gravity="center"
+                        android:text="부스텟"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="데미지"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="보공"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-                    </TableRow>
-
-                    <TableRow
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3sp"
+                        android:layout_span="1"
                         android:layout_weight="1"
-                        android:background="#AAAAAA">
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+                </TableRow>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="크뎀"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="#AAAAAA">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="주스텟퍼"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="크확"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3sp"
-                            android:layout_span="1"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="20sp" />
-                    </TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="올스텟퍼"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
 
-                </TableLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+                </TableRow>
 
-            </LinearLayout>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="#AAAAAA">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="10렙당 스텟"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="공격력"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="#AAAAAA">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="공퍼"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="방무"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="#AAAAAA">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="데미지"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="보공"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="#AAAAAA">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="크뎀"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="크확"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3sp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20sp" />
+                </TableRow>
+
+
+            </TableLayout>
+
+
         </ScrollView>
 
 
