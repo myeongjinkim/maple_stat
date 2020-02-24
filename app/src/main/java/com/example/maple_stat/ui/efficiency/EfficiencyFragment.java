@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -19,6 +20,17 @@ import com.example.maple_stat.R;
 public class EfficiencyFragment extends Fragment {
 
     private EfficiencyViewModel efficiencyViewModel;
+    private FragmentTransaction ft;
+    private EfficiencyCompareFragment efficiencyCompareFragment;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // 화면 전환 프래그먼트 선언 및 초기 화면 설정
+        efficiencyCompareFragment = new EfficiencyCompareFragment();
+
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -27,12 +39,10 @@ public class EfficiencyFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_efficiency, container, false);
 
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
-                R.array.my_stat, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        Spinner spinner_stat = (Spinner) root.findViewById(R.id.my_stat);
-        spinner_stat.setAdapter(adapter);
+        ft = getChildFragmentManager().beginTransaction();
+        ft.addToBackStack(null);
+        ft.replace(R.id.replace, efficiencyCompareFragment);
+        ft.commit();
 
         return root;
     }
