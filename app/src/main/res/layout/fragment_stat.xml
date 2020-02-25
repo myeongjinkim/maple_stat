@@ -31,27 +31,32 @@
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/stat_row">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_margin="2dp"
                         android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_left"
                         android:gravity="center"
                         android:text="직업"
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="2dp"
                         android:layout_weight="3"
-                        android:background="#FFFFFF"
+                        android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="메르세데스"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
                 </TableRow>
 
                 <TableRow
@@ -59,27 +64,32 @@
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/stat_row">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_margin="2dp"
                         android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_left"
                         android:gravity="center"
                         android:text="레벨"
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="2dp"
                         android:layout_weight="3"
-                        android:background="#FFFFFF"
+                        android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="1 (레벨뻥 +10%)"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
                 </TableRow>
 
                 <TableRow
@@ -87,7 +97,7 @@
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/stat_row">
 
                     <TextView
                         android:layout_width="0dp"
@@ -97,7 +107,7 @@
                         android:gravity="center"
                         android:text="스공"
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
@@ -107,7 +117,7 @@
                         android:background="#FFFFFF"
                         android:gravity="center"
                         android:text="0 ~ 0"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"/>
                 </TableRow>
 
                 <TableRow
@@ -115,7 +125,7 @@
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/stat_row">
 
                     <TextView
                         android:layout_width="0dp"
@@ -143,47 +153,57 @@
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/stat_row">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_margin="2dp"
                         android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_left"
                         android:gravity="center"
                         android:text="주스텟"
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="2dp"
                         android:layout_weight="1"
-                        android:background="#FFFFFF"
+                        android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_margin="2dp"
                         android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_left"
                         android:gravity="center"
                         android:text="부스텟"
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="2dp"
                         android:layout_weight="1"
-                        android:background="#FFFFFF"
+                        android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
                 </TableRow>
 
                 <TableRow
@@ -191,47 +211,57 @@
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/stat_row">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_margin="2dp"
                         android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_left"
                         android:gravity="center"
                         android:text="순스텟"
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="2dp"
                         android:layout_weight="1"
-                        android:background="#FFFFFF"
+                        android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_margin="2dp"
                         android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_left"
                         android:gravity="center"
                         android:text="스텟%"
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="2dp"
                         android:layout_weight="1"
-                        android:background="#FFFFFF"
+                        android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
                 </TableRow>
 
                 <TableRow
@@ -239,47 +269,57 @@
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/stat_row">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_margin="2dp"
                         android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_left"
                         android:gravity="center"
                         android:text="공격력"
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="2dp"
                         android:layout_weight="1"
-                        android:background="#FFFFFF"
+                        android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_margin="2dp"
                         android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_left"
                         android:gravity="center"
                         android:text="공격력%"
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="3sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="2dp"
                         android:layout_weight="1"
-                        android:background="#FFFFFF"
+                        android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"
-                        android:textSize="20sp" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
                 </TableRow>
 
                 <TableRow
@@ -287,7 +327,7 @@
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/stat_row">
 
                     <TextView
                         android:layout_width="0dp"
@@ -335,7 +375,7 @@
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/stat_row">
 
                     <TextView
                         android:layout_width="0dp"
@@ -383,7 +423,7 @@
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/stat_row">
 
                     <TextView
                         android:layout_width="0dp"
@@ -431,7 +471,7 @@
                     android:layout_height="0dp"
                     android:layout_margin="3sp"
                     android:layout_weight="1"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/stat_row">
 
                     <TextView
                         android:layout_width="0dp"

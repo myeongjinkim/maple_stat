@@ -22,12 +22,49 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="3dp"
                 android:background="#FFFFFF"
                 android:orientation="vertical">
 
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#000000">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+                            android:background="#8096D200"
+                            android:text="스텟 효율"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+                            android:background="#DDDDDD"
+                            android:text="추옵 계산기"
+                            android:textSize="20sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
                     android:id="@+id/replace">
                 </FrameLayout>
 
