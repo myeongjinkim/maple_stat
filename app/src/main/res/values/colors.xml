@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#32C8FA</color>
-
-    // 230 255 255
-    // 50 200 250
-    <color name="colorPrimaryDark">#AAAAAA</color>
+    <color name="colorPrimary">#32A0DC</color>
+    <color name="colorPrimaryDark">#CC000000</color>
     <color name="colorAccent">#D81B60</color>
 </resources>
