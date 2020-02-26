@@ -20,23 +20,17 @@
             android:layout_height="0dp"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:background="#FFFFFF">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:textSize="20dp" />
+            android:background="@drawable/stat_row">
 
             <Spinner
-                android:id="@+id/my_stat"
-                android:theme="@style/SpinnerTheme"
+                android:id="@+id/stat_compare1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
+                android:background="@drawable/stat_row_textview_left"
                 android:gravity="center"
+                android:text="선택"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
@@ -44,7 +38,9 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_margin="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
                 android:layout_weight="1"
                 android:background="@drawable/stat_row_textview_right"
                 android:gravity="center"
@@ -59,10 +55,48 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:textSize="20dp" />
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="="
+                android:textStyle="bold"
+                android:textSize="20dp"/>
 
+            <Spinner
+                android:id="@+id/stat_compare2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/stat_row_textview_left"
+                android:gravity="center"
+                android:text="선택"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/stat_row_textview_right"
+                android:gravity="center"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
         </TableRow>
 
         <TableRow
@@ -79,37 +113,13 @@
                 android:layout_weight="1"
                 android:background="@drawable/stat_row_textview_left_dark"
                 android:gravity="center"
-                android:text="스공"
+                android:text="기준"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/stat_row_textview_right"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/stat_row_textview_left_dark"
-                android:gravity="center"
-                android:text="vs스우"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:textSize="20dp"/>
-
-            <TextView
+            <Spinner
+                android:id="@+id/stat_standard"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="2dp"
@@ -118,11 +128,17 @@
                 android:layout_weight="1"
                 android:background="@drawable/stat_row_textview_right"
                 android:gravity="center"
-                android:text="0"
+                android:text="선택"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#FFFFFF"
+                android:gravity="center|left"/>
 
         </TableRow>
 
@@ -154,7 +170,6 @@
                 android:background="@drawable/stat_row_textview_right"
                 android:gravity="center"
                 android:text="0"
-                android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -175,12 +190,24 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:layout_weight="0.2"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:text="="
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
                 android:layout_marginRight="2dp"
-                android:layout_weight="1"
+                android:layout_weight="0.8"
                 android:background="@drawable/stat_row_textview_right"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#FFFFFF"
+                android:gravity="center|right"
+                android:text="0.1"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -215,7 +242,6 @@
                 android:background="@drawable/stat_row_textview_right"
                 android:gravity="center"
                 android:text="0"
-                android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -236,12 +262,24 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:layout_weight="0.2"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:text="="
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
                 android:layout_marginRight="2dp"
-                android:layout_weight="1"
+                android:layout_weight="0.8"
                 android:background="@drawable/stat_row_textview_right"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#FFFFFF"
+                android:gravity="center|right"
+                android:text="0.1"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -276,7 +314,6 @@
                 android:background="@drawable/stat_row_textview_right"
                 android:gravity="center"
                 android:text="0"
-                android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -297,12 +334,24 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:layout_weight="0.2"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:text="="
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
                 android:layout_marginRight="2dp"
-                android:layout_weight="1"
+                android:layout_weight="0.8"
                 android:background="@drawable/stat_row_textview_right"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#FFFFFF"
+                android:gravity="center|right"
+                android:text="0.1"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -337,7 +386,6 @@
                 android:background="@drawable/stat_row_textview_right"
                 android:gravity="center"
                 android:text="0"
-                android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -358,12 +406,24 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:layout_weight="0.2"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:text="="
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
                 android:layout_marginRight="2dp"
-                android:layout_weight="1"
+                android:layout_weight="0.8"
                 android:background="@drawable/stat_row_textview_right"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#FFFFFF"
+                android:gravity="center|right"
+                android:text="0.1"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -398,7 +458,6 @@
                 android:background="@drawable/stat_row_textview_right"
                 android:gravity="center"
                 android:text="0"
-                android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -419,12 +478,24 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:layout_weight="0.2"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:text="="
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
                 android:layout_marginRight="2dp"
-                android:layout_weight="1"
+                android:layout_weight="0.8"
                 android:background="@drawable/stat_row_textview_right"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#FFFFFF"
+                android:gravity="center|right"
+                android:text="0.1"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -459,7 +530,6 @@
                 android:background="@drawable/stat_row_textview_right"
                 android:gravity="center"
                 android:text="0"
-                android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -480,12 +550,24 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:layout_weight="0.2"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:text="="
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
                 android:layout_marginRight="2dp"
-                android:layout_weight="1"
+                android:layout_weight="0.8"
                 android:background="@drawable/stat_row_textview_right"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#FFFFFF"
+                android:gravity="center|right"
+                android:text="0.1"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -520,7 +602,6 @@
                 android:background="@drawable/stat_row_textview_right"
                 android:gravity="center"
                 android:text="0"
-                android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
@@ -541,22 +622,28 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
-                android:layout_marginRight="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/stat_row_textview_right"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#FFFFFF"
+                android:padding="5dp"
+                android:layout_weight="0.2"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:text="="
                 android:textStyle="bold"
                 android:textSize="20dp"/>
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/stat_row_textview_right"
+                android:gravity="center|right"
+                android:text="0.1"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
 
         </TableRow>
-
-
-
-
-
 
     </TableLayout>
 

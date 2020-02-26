@@ -26,11 +26,21 @@ public class EfficiencyCompareFragment extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_efficiency_compare, container, false);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
-                R.array.my_stat, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        Spinner spinner_stat = (Spinner) root.findViewById(R.id.my_stat);
-        spinner_stat.setAdapter(adapter);
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(getActivity(),
+                R.array.stat_list, android.R.layout.simple_spinner_item);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        Spinner spinner_stat_compare1 = (Spinner) root.findViewById(R.id.stat_compare1);
+        spinner_stat_compare1.setAdapter(adapter1);
+
+        Spinner spinner_stat_compare2 = (Spinner) root.findViewById(R.id.stat_compare2);
+        spinner_stat_compare2.setAdapter(adapter1);
+
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(getActivity(),
+                R.array.stat_standard, android.R.layout.simple_spinner_item);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        Spinner spinner_stat_standard = (Spinner) root.findViewById(R.id.stat_standard);
+        spinner_stat_standard.setAdapter(adapter2);
+
 
         return root;
     }
