@@ -36,7 +36,7 @@
                     <TableRow
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_margin="3sp"
+                        android:layout_margin="3dp"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row">
 
@@ -50,7 +50,7 @@
                             android:text="스텟 효율"
                             android:textColor="#FFFFFF"
                             android:textStyle="bold"
-                            android:textSize="20sp" />
+                            android:textSize="20dp" />
 
                         <Button
                             android:layout_width="0dp"
@@ -59,11 +59,11 @@
                             android:layout_marginBottom="2dp"
                             android:layout_marginRight="2dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_right_dark"
+                            android:background="@drawable/stat_row_textview_right"
                             android:gravity="center"
                             android:text="추옵 계산기"
                             android:textStyle="bold"
-                            android:textSize="20sp" />
+                            android:textSize="20dp" />
 
                     </TableRow>
 
