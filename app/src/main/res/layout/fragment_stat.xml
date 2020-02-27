@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:outLine="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.maple_stat.ui.stat.StatFragment">
     <data>
         <variable
@@ -23,6 +24,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
                 android:background="#FFFFFF"
                 android:shrinkColumns="*"
                 android:stretchColumns="*">
@@ -34,7 +37,7 @@
                     android:layout_margin="3dp"
                     android:background="@drawable/stat_row">
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -43,17 +46,25 @@
                         android:text="직업"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|left"
                         android:text="메르세데스"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000"/>
 
                 </TableRow>
 
@@ -64,7 +75,7 @@
                     android:layout_margin="3dp"
                     android:background="@drawable/stat_row">
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -73,17 +84,24 @@
                         android:text="레벨"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|left"
                         android:text="1 (레벨뻥 +10%)"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000"/>
                 </TableRow>
 
                 <TableRow
@@ -93,7 +111,7 @@
                     android:layout_margin="3dp"
                     android:background="@drawable/stat_row">
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -102,17 +120,24 @@
                         android:text="스공"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0 ~ 0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
                 </TableRow>
 
@@ -123,7 +148,7 @@
                     android:layout_margin="3dp"
                     android:background="@drawable/stat_row">
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -132,17 +157,24 @@
                         android:text="vs스우"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0 ~ 0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
                 </TableRow>
 
@@ -153,7 +185,7 @@
                     android:layout_margin="3dp"
                     android:background="@drawable/stat_row">
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -162,9 +194,13 @@
                         android:text="주스텟"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -172,10 +208,13 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -185,17 +224,24 @@
                         android:text="부스텟"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
                 </TableRow>
 
                 <TableRow
@@ -205,7 +251,7 @@
                     android:layout_margin="3dp"
                     android:background="@drawable/stat_row">
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -214,9 +260,13 @@
                         android:text="순스텟"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -224,10 +274,13 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -237,17 +290,24 @@
                         android:text="스텟%"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
                 </TableRow>
 
                 <TableRow
@@ -257,7 +317,7 @@
                     android:layout_margin="3dp"
                     android:background="@drawable/stat_row">
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -266,9 +326,13 @@
                         android:text="공격력"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -276,10 +340,13 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -289,17 +356,24 @@
                         android:text="공격력%"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="18dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
                 </TableRow>
 
                 <TableRow
@@ -309,7 +383,7 @@
                     android:layout_margin="3dp"
                     android:background="@drawable/stat_row">
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -318,9 +392,13 @@
                         android:text="데미지"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -328,10 +406,13 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -341,17 +422,24 @@
                         android:text="보공"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
                 </TableRow>
 
@@ -362,7 +450,7 @@
                     android:layout_margin="3dp"
                     android:background="@drawable/stat_row">
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -371,9 +459,13 @@
                         android:text="최종뎀"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -381,10 +473,13 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -394,17 +489,24 @@
                         android:text="방무"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
                 </TableRow>
 
@@ -415,7 +517,7 @@
                     android:layout_margin="3dp"
                     android:background="@drawable/stat_row">
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -424,9 +526,13 @@
                         android:text="크확"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -434,10 +540,13 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -447,17 +556,24 @@
                         android:text="크뎀"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
                 </TableRow>
 
@@ -468,7 +584,7 @@
                     android:layout_margin="3dp"
                     android:background="@drawable/stat_row">
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -477,9 +593,13 @@
                         android:text="아케인포스"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="15dp"/>
+                        android:textSize="14dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -487,10 +607,13 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -500,17 +623,24 @@
                         android:text="포스뻥"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="#000000" />
 
-                    <TextView
+                    <com.example.maple_stat.font.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center|right"
                         android:text="0"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="0.5"
+                        outLine:textStrokeColor="#000000" />
 
                 </TableRow>
 

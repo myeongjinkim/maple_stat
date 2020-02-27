@@ -23,13 +23,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="3dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
                 android:background="#FFFFFF"
                 android:orientation="vertical">
 
                 <TableLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:background="#FFFFFF"
                     android:shrinkColumns="*"
                     android:stretchColumns="*">
@@ -37,7 +39,7 @@
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:layout_margin="3dp"
                         android:background="@drawable/stat_row">
 
@@ -66,6 +68,20 @@
                             android:textStyle="bold"
                             android:textSize="20dp" />
 
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="#FFFFFF">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:gravity="center"/>
                     </TableRow>
 
                 </TableLayout>
