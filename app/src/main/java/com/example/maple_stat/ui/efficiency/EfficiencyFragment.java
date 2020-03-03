@@ -20,15 +20,16 @@ import com.example.maple_stat.R;
 public class EfficiencyFragment extends Fragment {
 
     private EfficiencyViewModel efficiencyViewModel;
-    private FragmentTransaction ft;
-    private EfficiencyCompareFragment efficiencyCompareFragment;
+    private ArrayAdapter<CharSequence> adapter1;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // 화면 전환 프래그먼트 선언 및 초기 화면 설정
-        efficiencyCompareFragment = new EfficiencyCompareFragment();
+
+        adapter1 = ArrayAdapter.createFromResource(getActivity(),
+                R.array.stat_list, android.R.layout.simple_spinner_item);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
     }
 
@@ -38,11 +39,13 @@ public class EfficiencyFragment extends Fragment {
                 ViewModelProviders.of(this).get(EfficiencyViewModel.class);
         View root = inflater.inflate(R.layout.fragment_efficiency, container, false);
 
+        Spinner spinner_stat_compare1 = (Spinner) root.findViewById(R.id.stat_compare1);
+        spinner_stat_compare1.setAdapter(adapter1);
 
-        ft = getChildFragmentManager().beginTransaction();
-        ft.addToBackStack(null);
-        ft.replace(R.id.replace, efficiencyCompareFragment);
-        ft.commit();
+        Spinner spinner_stat_compare2 = (Spinner) root.findViewById(R.id.stat_compare2);
+        spinner_stat_compare2.setAdapter(adapter1);
+
+
 
         return root;
     }

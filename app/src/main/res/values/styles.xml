@@ -6,16 +6,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
     </style>
 
-    <!--<style name="SpinnerDivideStyle" parent="android:style/Widget.ListView.DropDown">
-        <item name="android:divider">#AAAAAA</item>
-        <item name="android:dividerHeight">2dp</item>
+    <style name="TabTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorNormal</item>                     <!-- 배경 -->
+        <item name="android:textColorPrimary">@color/colorPrimary</item>        <!-- 탭바 선택된 텍스트 -->
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>  <!-- 탭바 텍스트 -->
+        <item name="colorAccent">@color/colorPrimary</item>                     <!-- 하단 움직이는 바 색-->
     </style>
-
-    <style name="SpinnerTheme" parent="AppTheme">
-        <item name="android:dropDownListViewStyle">@style/SpinnerDivideStyle</item>
-    </style>-->
 
 </resources>

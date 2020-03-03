@@ -22,6 +22,8 @@ public class CalculatorFragment extends Fragment {
     private CalculatorViewModel calculatorViewModel;
     private FragmentTransaction ft;
     private CalculatorItemFragment calculatorItemFragment;
+    private CalculatorPotentialFragment calculatorPotentialFragment;
+    private CalculatorAdditionalFragment calculatorAdditionalFragment;
 
 
     @Override
@@ -30,6 +32,8 @@ public class CalculatorFragment extends Fragment {
 
         // 화면 전환 프래그먼트 선언 및 초기 화면 설정
         calculatorItemFragment = new CalculatorItemFragment();
+        calculatorPotentialFragment = new CalculatorPotentialFragment();
+        calculatorAdditionalFragment = new CalculatorAdditionalFragment();
 
     }
 
@@ -40,10 +44,11 @@ public class CalculatorFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_calculator, container, false);
 
 
-        ft = getChildFragmentManager().beginTransaction();
+        /*ft = getChildFragmentManager().beginTransaction();
         ft.addToBackStack(null);
         ft.replace(R.id.calculator_replace, calculatorItemFragment);
-        ft.commit();
+        ft.commit();*/
+
         return root;
     }
 }

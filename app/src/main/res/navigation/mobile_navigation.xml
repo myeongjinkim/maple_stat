@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/navigation_calculator"
         android:name="com.example.maple_stat.ui.calculator.CalculatorFragment"
-        android:label="@string/title_setting"
+        android:label="@string/title_calculator"
         tools:layout="@layout/fragment_setting" />
 
     <fragment

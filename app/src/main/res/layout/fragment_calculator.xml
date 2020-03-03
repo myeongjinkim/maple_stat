@@ -68,6 +68,19 @@
                             android:textStyle="bold"
                             android:textSize="20dp" />
 
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/stat_row_textview_right"
+                            android:gravity="center"
+                            android:text="추옵 계산기"
+                            android:textStyle="bold"
+                            android:textSize="20dp" />
+
                     </TableRow>
 
                     <TableRow
