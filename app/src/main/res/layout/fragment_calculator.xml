@@ -2,17 +2,17 @@
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.maple_stat.ui.efficiency.EfficiencyFragment">
+    tools:context="com.example.maple_stat.ui.calculator.CalculatorFragment">
     <data>
         <variable
             name="fragment"
-            type="com.example.maple_stat.ui.efficiency.EfficiencyFragment"/>
+            type="com.example.maple_stat.ui.calculator.CalculatorFragment"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="?attr/actionBarSize"
-        android:id="@+id/efficiency">
+        android:id="@+id/calculator">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                             android:layout_weight="1"
                             android:background="@drawable/stat_row_textview_left"
                             android:gravity="center"
-                            android:text="추가"
+                            android:text="스텟 효율"
                             android:textColor="#FFFFFF"
                             android:textStyle="bold"
                             android:textSize="20dp" />
@@ -64,7 +64,7 @@
                             android:layout_weight="1"
                             android:background="@drawable/stat_row_textview_right"
                             android:gravity="center"
-                            android:text="제거"
+                            android:text="추옵 계산기"
                             android:textStyle="bold"
                             android:textSize="20dp" />
 
@@ -90,13 +90,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="10"
-                    android:id="@+id/replace">
+                    android:id="@+id/calculator_replace">
                 </FrameLayout>
 
             </LinearLayout>
 
         </ScrollView>
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

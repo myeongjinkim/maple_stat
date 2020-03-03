@@ -8,8 +8,13 @@
 
     <item
         android:id="@+id/navigation_efficiency"
-        android:icon="@drawable/ic_zoom_in_black_24dp"
+        android:icon="@drawable/ic_storage_black_24dp"
         android:title="@string/title_efficiency" />
+
+    <item
+        android:id="@+id/navigation_calculator"
+        android:icon="@drawable/ic_zoom_in_black_24dp"
+        android:title="@string/title_calculator" />
 
     <item
         android:id="@+id/navigation_setting"
