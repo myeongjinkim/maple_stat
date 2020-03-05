@@ -22,43 +22,42 @@
 
             <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:background="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:background="#AAAAAA"
                 android:shrinkColumns="*"
                 android:stretchColumns="*">
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/stat_row">
+                    android:background="#FFFFFF">
 
-                    <Button
+                    <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
+                        android:layout_column="7"
                         android:gravity="center"
-                        android:text="추가"
-                        android:textStyle="bold"
-                        android:textSize="20dp" />
+                        android:background="#FFFFFF"
+                        android:src="@drawable/delete_state"/>
 
-                    <Button
+                    <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
+                        android:layout_column="6"
                         android:gravity="center"
-                        android:text="제거"
-                        android:textStyle="bold"
-                        android:textSize="20dp" />
+                        android:background="#FFFFFF"
+                        android:src="@drawable/add_state"/>
 
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/stat_row">
+                    android:background="#FFFFFF"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
 
                     <Spinner
                         android:id="@+id/stat_compare1"
@@ -72,8 +71,8 @@
                     <EditText
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginRight="2dp"
                         android:layout_weight="1"
+
                         android:background="@drawable/stat_row_textview_right"
                         android:digits="0123456789"
                         android:gravity="center"
@@ -81,8 +80,7 @@
                         android:maxLength="5"
                         android:selectAllOnFocus="true"
                         android:text="1"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textSize="20dp"/>
 
                     <TextView
                         android:layout_width="0dp"
@@ -97,7 +95,6 @@
                         android:id="@+id/stat_compare2"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="2dp"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_left"
                         android:gravity="center"
@@ -108,10 +105,9 @@
                         android:layout_height="50dp"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_right"
-                        android:gravity="center|right"
+                        android:gravity="center"
                         android:text="0"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textSize="20dp"/>
 
                 </TableRow>
 

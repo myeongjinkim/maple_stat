@@ -39,11 +39,11 @@ public class EfficiencyFragment extends Fragment {
                 ViewModelProviders.of(this).get(EfficiencyViewModel.class);
         View root = inflater.inflate(R.layout.fragment_efficiency, container, false);
 
-        Spinner spinner_stat_compare1 = (Spinner) root.findViewById(R.id.stat_compare1);
+        /*Spinner spinner_stat_compare1 = (Spinner) root.findViewById(R.id.stat_compare1);
         spinner_stat_compare1.setAdapter(adapter1);
 
         Spinner spinner_stat_compare2 = (Spinner) root.findViewById(R.id.stat_compare2);
-        spinner_stat_compare2.setAdapter(adapter1);
+        spinner_stat_compare2.setAdapter(adapter1);*/
 
 
 

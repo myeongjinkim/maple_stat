@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.navigation.ui.AppBarConfiguration;
 
 import com.example.maple_stat.R;
 
@@ -44,10 +45,9 @@ public class CalculatorFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_calculator, container, false);
 
 
-        /*ft = getChildFragmentManager().beginTransaction();
-        ft.addToBackStack(null);
-        ft.replace(R.id.calculator_replace, calculatorItemFragment);
-        ft.commit();*/
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.navigation_stat, R.id.navigation_efficiency, R.id.navigation_calculator, R.id.navigation_setting)
+                .build();
 
         return root;
     }
