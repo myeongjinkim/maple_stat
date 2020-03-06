@@ -1,114 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.maple_stat.ui.calculator.CalculatorFragment">
-    <data>
-        <variable
-            name="fragment"
-            type="com.example.maple_stat.ui.calculator.CalculatorFragment"/>
-    </data>
-    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TabTheme"
+        android:background="#FFFFFF">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="?attr/actionBarSize"
-        android:id="@+id/calculator">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fillViewport="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="3dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:background="#FFFFFF"
-                android:orientation="vertical">
-
-                <TableLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2"
-                    android:background="#FFFFFF"
-                    android:shrinkColumns="*"
-                    android:stretchColumns="*">
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="2"
-                        android:layout_margin="3dp">
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="2dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
-                            android:gravity="center"
-                            android:text="스텟 효율"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"
-                            android:textSize="20dp" />
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginRight="2dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_right"
-                            android:gravity="center"
-                            android:text="추옵 계산기"
-                            android:textStyle="bold"
-                            android:textSize="20dp" />
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginRight="2dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_right"
-                            android:gravity="center"
-                            android:text="추옵 계산기"
-                            android:textStyle="bold"
-                            android:textSize="20dp" />
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:layout_margin="3dp"
-                        android:background="#FFFFFF">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:gravity="center"/>
-                    </TableRow>
-
-                </TableLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="10"
-                    android:id="@+id/calculator_replace">
-                </FrameLayout>
-
-            </LinearLayout>
-
-        </ScrollView>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</layout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

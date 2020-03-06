@@ -9,7 +9,6 @@ import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -18,7 +17,10 @@ import com.example.maple_stat.R;
 
 public class CalculatorAdditionalFragment extends Fragment {
 
-
+    public static CalculatorAdditionalFragment newInstance(){
+        CalculatorAdditionalFragment fragment = new CalculatorAdditionalFragment();
+        return fragment;
+    }
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);

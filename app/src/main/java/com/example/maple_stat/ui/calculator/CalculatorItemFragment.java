@@ -11,6 +11,11 @@ import com.example.maple_stat.R;
 
 public class CalculatorItemFragment extends Fragment {
 
+    public static CalculatorItemFragment newInstance(){
+        CalculatorItemFragment fragment = new CalculatorItemFragment();
+        return fragment;
+    }
+
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 

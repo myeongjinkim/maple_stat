@@ -10,31 +10,27 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.ui.AppBarConfiguration;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.maple_stat.R;
+import com.google.android.material.tabs.TabLayout;
+
+import java.util.ArrayList;
 
 public class CalculatorFragment extends Fragment {
 
     private CalculatorViewModel calculatorViewModel;
-    private FragmentTransaction ft;
-    private CalculatorItemFragment calculatorItemFragment;
-    private CalculatorPotentialFragment calculatorPotentialFragment;
-    private CalculatorAdditionalFragment calculatorAdditionalFragment;
-
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // 화면 전환 프래그먼트 선언 및 초기 화면 설정
-        calculatorItemFragment = new CalculatorItemFragment();
-        calculatorPotentialFragment = new CalculatorPotentialFragment();
-        calculatorAdditionalFragment = new CalculatorAdditionalFragment();
 
     }
 
@@ -44,11 +40,23 @@ public class CalculatorFragment extends Fragment {
                 ViewModelProviders.of(this).get(CalculatorViewModel.class);
         View root = inflater.inflate(R.layout.fragment_calculator, container, false);
 
+        FragmentManager fm;
+        fm = getChildFragmentManager();
+        ArrayList<Fragment> fList;
 
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_stat, R.id.navigation_efficiency, R.id.navigation_calculator, R.id.navigation_setting)
-                .build();
+        // 각 탭에 들어갈 프라그먼트 생성 및 추가
+        fList = new ArrayList<Fragment>();
+        fList.add(CalculatorItemFragment.newInstance());
+        fList.add(CalculatorPotentialFragment.newInstance());
+        fList.add(CalculatorAdditionalFragment.newInstance());
+
+        CalculatorFragmentPagerAdapter calculatorFragmentPagerAdapter = new CalculatorFragmentPagerAdapter(fm, fList);
+        ViewPager viewPager = root.findViewById(R.id.view_pager);
+        viewPager.setAdapter(calculatorFragmentPagerAdapter);
+        TabLayout tabs = root.findViewById(R.id.tabs);
+        tabs.setupWithViewPager(viewPager);
 
         return root;
     }
+
 }
