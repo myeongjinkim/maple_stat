@@ -23,14 +23,12 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
                 android:shrinkColumns="*"
                 android:stretchColumns="*">
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorWhite">
+                    android:layout_height="wrap_content">
 
                     <ImageButton
                         android:layout_width="0dp"
