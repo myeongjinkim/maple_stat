@@ -11,7 +11,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="?attr/actionBarSize">
+        android:paddingBottom="?attr/actionBarSize"
+        android:paddingTop="?attr/actionBarSize">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -22,14 +23,14 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#AAAAAA"
+                android:background="@color/colorWhite"
                 android:shrinkColumns="*"
                 android:stretchColumns="*">
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#FFFFFF">
+                    android:background="@color/colorWhite">
 
                     <ImageButton
                         android:layout_width="0dp"
@@ -37,7 +38,7 @@
                         android:layout_weight="1"
                         android:layout_column="7"
                         android:gravity="center"
-                        android:background="#FFFFFF"
+                        android:background="@color/colorWhite"
                         android:src="@drawable/delete_state"/>
 
                     <ImageButton
@@ -46,7 +47,7 @@
                         android:layout_weight="1"
                         android:layout_column="6"
                         android:gravity="center"
-                        android:background="#FFFFFF"
+                        android:background="@color/colorWhite"
                         android:src="@drawable/add_state"/>
 
                 </TableRow>
@@ -54,12 +55,12 @@
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#FFFFFF"
+                    android:background="@color/colorWhite"
                     android:padding="10dp"
                     android:layout_marginBottom="1dp">
 
                     <Spinner
-                        android:id="@+id/stat_compare1"
+                        android:id="@+id/stat_compare_r0"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -71,7 +72,7 @@
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-
+                        android:layout_marginTop="1dp"
                         android:background="@drawable/stat_row_textview_right"
                         android:digits="0123456789"
                         android:gravity="center"
@@ -91,7 +92,7 @@
                         android:textStyle="bold" />
 
                     <Spinner
-                        android:id="@+id/stat_compare2"
+                        android:id="@+id/stat_compare_l0"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -103,6 +104,7 @@
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
+                        android:layout_marginTop="1dp"
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"

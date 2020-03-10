@@ -6,15 +6,23 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
     <style name="TabTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorNormal</item>                     <!-- 배경 -->
+        <item name="colorPrimary">@color/colorWhite</item>                     <!-- 배경 -->
         <item name="android:textColorPrimary">@color/colorPrimary</item>        <!-- 탭바 선택된 텍스트 -->
         <item name="android:textColorSecondary">@color/colorPrimaryDark</item>  <!-- 탭바 텍스트 -->
         <item name="colorAccent">@color/colorPrimary</item>                     <!-- 하단 움직이는 바 색-->
     </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
 </resources>

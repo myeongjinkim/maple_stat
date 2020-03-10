@@ -11,12 +11,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="?attr/actionBarSize">
+        android:paddingBottom="?attr/actionBarSize"
+        android:paddingTop="?attr/actionBarSize">
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
+            android:fillViewport="true"
+            android:background="@color/colorWhite">
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -25,7 +27,7 @@
                 android:layout_margin="3dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:background="#FFFFFF"
+                android:background="@color/colorWhite"
                 android:shrinkColumns="*"
                 android:stretchColumns="*">
 
