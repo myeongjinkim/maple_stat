@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class CalculatorFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    private String[] VIEW_MAPNTOP_TITLES = {"TAB1","TAB2","TAB3"};
+    private String[] VIEW_MAPNTOP_TITLES = {"추옵","잠재능력","에디셔널"};
     private ArrayList<Fragment> fList;
 
     // 아답터 생성자

@@ -1,10 +1,13 @@
 package com.example.maple_stat.ui.calculator;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.ArrayAdapter;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -20,9 +23,12 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.maple_stat.R;
+import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
+
+import static android.content.ContentValues.TAG;
 
 public class CalculatorFragment extends Fragment {
 
@@ -39,6 +45,11 @@ public class CalculatorFragment extends Fragment {
         calculatorViewModel =
                 ViewModelProviders.of(this).get(CalculatorViewModel.class);
         View root = inflater.inflate(R.layout.fragment_calculator, container, false);
+        final AppBarLayout appBarLayout = (AppBarLayout) getActivity().findViewById(R.id.app_bar);
+
+        //app bar 기본 설정
+        appBarLayout.setSelected(false);
+
 
         FragmentManager fm;
         fm = getChildFragmentManager();
@@ -55,6 +66,8 @@ public class CalculatorFragment extends Fragment {
         viewPager.setAdapter(calculatorFragmentPagerAdapter);
         TabLayout tabs = root.findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
+
+
 
         return root;
     }
