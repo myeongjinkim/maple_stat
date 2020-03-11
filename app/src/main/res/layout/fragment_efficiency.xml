@@ -529,7 +529,74 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorLineGray"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorWhite"
+                        android:layout_marginBottom="0.5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/stat_row_textview_left"
+                            android:gravity="center"
+                            android:textColor="#FFFFFF" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/stat_row_textview_right"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:selectAllOnFocus="true"
+                            android:text="1"
+                            android:textSize="20dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="="
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/stat_row_textview_left"
+                            android:gravity="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/stat_row_textview_right"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="20dp"/>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLineGray"
+                    android:layout_marginTop="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
