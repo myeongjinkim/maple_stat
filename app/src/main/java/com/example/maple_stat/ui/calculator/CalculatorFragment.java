@@ -1,34 +1,26 @@
 package com.example.maple_stat.ui.calculator;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
-import android.widget.ArrayAdapter;
-import android.widget.ScrollView;
-import android.widget.Spinner;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.navigation.ui.AppBarConfiguration;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.maple_stat.R;
+import com.example.maple_stat.ui.calculator.calculator_fragment.CalculatorAdditionalFragment;
+import com.example.maple_stat.ui.calculator.calculator_fragment.CalculatorOptionFragment;
+import com.example.maple_stat.ui.calculator.calculator_fragment.CalculatorOrderFragment;
+import com.example.maple_stat.ui.calculator.calculator_fragment.CalculatorPotentialFragment;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
-
-import static android.content.ContentValues.TAG;
 
 public class CalculatorFragment extends Fragment {
 
@@ -57,7 +49,8 @@ public class CalculatorFragment extends Fragment {
 
         // 각 탭에 들어갈 프라그먼트 생성 및 추가
         fList = new ArrayList<Fragment>();
-        fList.add(CalculatorItemFragment.newInstance());
+        fList.add(CalculatorOptionFragment.newInstance());
+        fList.add(CalculatorOrderFragment.newInstance());
         fList.add(CalculatorPotentialFragment.newInstance());
         fList.add(CalculatorAdditionalFragment.newInstance());
 
