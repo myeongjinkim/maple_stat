@@ -22,6 +22,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.maple_stat.R;
+import com.example.maple_stat.custom.CustomSpinner;
 import com.example.maple_stat.databinding.FragmentEfficiencyBinding;
 import com.google.android.material.appbar.AppBarLayout;
 
@@ -65,11 +66,9 @@ public class EfficiencyFragment extends Fragment {
             }
         });
 
-        Spinner spinner_stat_compare1 = (Spinner) root.findViewById(R.id.stat_compare_r0);
-        spinner_stat_compare1.setAdapter(adapter1);
+        CustomSpinner customSpinnerKind_left0 = (CustomSpinner) root.findViewById(R.id.stat_compare_l0);
 
-        Spinner spinner_stat_compare2 = (Spinner) root.findViewById(R.id.stat_compare_l0);
-        spinner_stat_compare2.setAdapter(adapter1);
+        CustomSpinner customSpinner_right0 = (CustomSpinner) root.findViewById(R.id.stat_compare_r0);
 
 
         binding = DataBindingUtil.bind(root);

@@ -27,10 +27,6 @@ public class CalculatorOptionFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 
-        adapter1 = ArrayAdapter.createFromResource(getActivity(),
-                R.array.stat_list, android.R.layout.simple_spinner_item);
-        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
     }
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,

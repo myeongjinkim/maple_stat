@@ -2,6 +2,7 @@
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:outLine="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.maple_stat.ui.efficiency.EfficiencyFragment">
     <data>
         <variable
@@ -68,20 +69,27 @@
                         android:paddingBottom="20dp"
                         android:orientation="horizontal">
 
-                        <Spinner
-                            android:id="@+id/stat_compare_r0"
+                        <com.example.maple_stat.custom.CustomSpinner
+                            android:id="@+id/stat_compare_l0"
                             android:layout_width="0dp"
-                            android:layout_height="50dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left_green"
+                            android:prompt="@string/spinner_prompt"
+                            android:entries="@array/stat_list"
+                            android:background="@drawable/spinner_left_state"
                             android:gravity="center"
-                            android:textColor="@color/colorWhite" />
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            outLine:textStroke="true"
+                            outLine:textStrokeWidth="1.0"
+                            outLine:textStrokeColor="#000000" />
 
                         <EditText
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:layout_marginTop="1dp"
                             android:background="@drawable/stat_row_textview_right"
                             android:digits="0123456789"
                             android:gravity="center"
@@ -100,20 +108,27 @@
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
-                        <Spinner
-                            android:id="@+id/stat_compare_l0"
+                        <com.example.maple_stat.custom.CustomSpinner
+                            android:id="@+id/stat_compare_r0"
                             android:layout_width="0dp"
-                            android:layout_height="50dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left_green"
+                            android:prompt="@string/spinner_prompt"
+                            android:entries="@array/stat_list"
+                            android:background="@drawable/spinner_left_state"
                             android:gravity="center"
-                            android:textColor="@color/colorWhite" />
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            outLine:textStroke="true"
+                            outLine:textStrokeWidth="1.0"
+                            outLine:textStrokeColor="#000000" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:layout_marginTop="1dp"
                             android:background="@drawable/stat_row_textview_right"
                             android:gravity="center"
                             android:text="0"
