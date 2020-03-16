@@ -1,4 +1,4 @@
-package com.example.maple_stat.ui.calculator.calculator_fragment;
+package com.example.maple_stat.ui.calculator.calculator_inner_fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,8 +11,8 @@ import com.example.maple_stat.R;
 
 public class CalculatorOrderFragment extends Fragment {
 
-    public static CalculatorOptionFragment newInstance(){
-        CalculatorOptionFragment fragment = new CalculatorOptionFragment();
+    public static CalculatorOrderFragment newInstance(){
+        CalculatorOrderFragment fragment = new CalculatorOrderFragment();
         return fragment;
     }
 

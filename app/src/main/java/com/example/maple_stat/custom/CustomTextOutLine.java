@@ -1,4 +1,4 @@
-package com.example.maple_stat.font;
+package com.example.maple_stat.custom;
 
 import android.content.Context;
 import android.content.res.ColorStateList;

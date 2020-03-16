@@ -13,10 +13,10 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.maple_stat.R;
-import com.example.maple_stat.ui.calculator.calculator_fragment.CalculatorAdditionalFragment;
-import com.example.maple_stat.ui.calculator.calculator_fragment.CalculatorOptionFragment;
-import com.example.maple_stat.ui.calculator.calculator_fragment.CalculatorOrderFragment;
-import com.example.maple_stat.ui.calculator.calculator_fragment.CalculatorPotentialFragment;
+import com.example.maple_stat.ui.calculator.calculator_inner_fragment.CalculatorAdditionalFragment;
+import com.example.maple_stat.ui.calculator.calculator_inner_fragment.CalculatorOptionFragment;
+import com.example.maple_stat.ui.calculator.calculator_inner_fragment.CalculatorOrderFragment;
+import com.example.maple_stat.ui.calculator.calculator_inner_fragment.CalculatorPotentialFragment;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
 
@@ -37,11 +37,6 @@ public class CalculatorFragment extends Fragment {
         calculatorViewModel =
                 ViewModelProviders.of(this).get(CalculatorViewModel.class);
         View root = inflater.inflate(R.layout.fragment_calculator, container, false);
-        final AppBarLayout appBarLayout = (AppBarLayout) getActivity().findViewById(R.id.app_bar);
-
-        //app bar 기본 설정
-        appBarLayout.setSelected(false);
-
 
         FragmentManager fm;
         fm = getChildFragmentManager();

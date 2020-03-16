@@ -4,4 +4,5 @@
     <string name="title_efficiency">스탯 효율</string>
     <string name="title_calculator">효율 계산기</string>
     <string name="title_setting">스펙 설정</string>
+    <string name="spinner_prompt">-선택-</string>
 </resources>

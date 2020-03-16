@@ -34,14 +34,14 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp">
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left"
+                        android:background="@drawable/stat_row_textview_left_green"
                         android:gravity="center"
                         android:text="직업"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -50,7 +50,7 @@
                         outLine:textStrokeColor="#000000" />
 
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
@@ -71,14 +71,14 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp">
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left"
+                        android:background="@drawable/stat_row_textview_left_green"
                         android:gravity="center"
                         android:text="레벨"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -86,7 +86,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
@@ -106,14 +106,14 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp">
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_left_dark"
                         android:gravity="center"
                         android:text="스공"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -121,7 +121,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
@@ -142,14 +142,14 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp">
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_left_dark"
                         android:gravity="center"
                         android:text="vs스우"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -157,7 +157,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
@@ -178,14 +178,14 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp">
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left"
+                        android:background="@drawable/stat_row_textview_left_green"
                         android:gravity="center"
                         android:text="주스텟"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -193,7 +193,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -207,15 +207,15 @@
                         outLine:textStrokeWidth="0.5"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_marginLeft="2dp"
-                        android:background="@drawable/stat_row_textview_left"
+                        android:background="@drawable/stat_row_textview_left_green"
                         android:gravity="center"
                         android:text="부스텟"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -223,7 +223,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -243,14 +243,14 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp">
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left"
+                        android:background="@drawable/stat_row_textview_left_green"
                         android:gravity="center"
                         android:text="순스텟"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -258,7 +258,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -272,15 +272,15 @@
                         outLine:textStrokeWidth="0.5"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_marginLeft="2dp"
-                        android:background="@drawable/stat_row_textview_left"
+                        android:background="@drawable/stat_row_textview_left_green"
                         android:gravity="center"
                         android:text="스텟%"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -288,7 +288,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -308,14 +308,14 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp">
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left"
+                        android:background="@drawable/stat_row_textview_left_green"
                         android:gravity="center"
                         android:text="공격력"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -323,7 +323,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -337,15 +337,15 @@
                         outLine:textStrokeWidth="0.5"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_marginLeft="2dp"
-                        android:background="@drawable/stat_row_textview_left"
+                        android:background="@drawable/stat_row_textview_left_green"
                         android:gravity="center"
                         android:text="공격력%"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="18dp"
                         android:singleLine="true"
@@ -353,7 +353,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -373,14 +373,14 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp">
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_left_dark"
                         android:gravity="center"
                         android:text="데미지"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -388,7 +388,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -402,7 +402,7 @@
                         outLine:textStrokeWidth="0.5"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -410,7 +410,7 @@
                         android:background="@drawable/stat_row_textview_left_dark"
                         android:gravity="center"
                         android:text="보공"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -418,7 +418,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -439,14 +439,14 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp">
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_left_dark"
                         android:gravity="center"
                         android:text="최종뎀"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -454,7 +454,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -468,7 +468,7 @@
                         outLine:textStrokeWidth="0.5"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -476,7 +476,7 @@
                         android:background="@drawable/stat_row_textview_left_dark"
                         android:gravity="center"
                         android:text="방무"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -484,7 +484,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -505,14 +505,14 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp">
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_left_dark"
                         android:gravity="center"
                         android:text="크확"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -520,7 +520,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -534,7 +534,7 @@
                         outLine:textStrokeWidth="0.5"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -542,7 +542,7 @@
                         android:background="@drawable/stat_row_textview_left_dark"
                         android:gravity="center"
                         android:text="크뎀"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -550,7 +550,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -571,14 +571,14 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp">
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/stat_row_textview_left_dark"
                         android:gravity="center"
                         android:text="아케인포스"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="14dp"
                         android:singleLine="true"
@@ -586,7 +586,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -600,7 +600,7 @@
                         outLine:textStrokeWidth="0.5"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -608,7 +608,7 @@
                         android:background="@drawable/stat_row_textview_left_dark"
                         android:gravity="center"
                         android:text="포스뻥"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/colorWhite"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:singleLine="true"
@@ -616,7 +616,7 @@
                         outLine:textStrokeWidth="1.0"
                         outLine:textStrokeColor="#000000" />
 
-                    <com.example.maple_stat.font.CustomTextOutLine
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

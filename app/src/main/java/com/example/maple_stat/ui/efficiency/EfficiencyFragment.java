@@ -57,8 +57,6 @@ public class EfficiencyFragment extends Fragment {
         scrollViewTest.getViewTreeObserver().addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
             @Override public void onScrollChanged() {
 
-                Log.i(TAG,"scroll:"+scrollViewTest.getScrollY());
-
                 if(scrollViewTest.getScrollY()!=0){
                     appBarLayout.setSelected(true);
                 }else{

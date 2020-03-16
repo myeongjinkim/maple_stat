@@ -73,9 +73,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -105,9 +105,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -143,9 +143,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -173,9 +173,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -210,9 +210,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -240,9 +240,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -277,9 +277,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -307,9 +307,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -344,9 +344,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -374,9 +374,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -411,9 +411,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -441,9 +441,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -478,9 +478,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -508,9 +508,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -545,9 +545,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -575,9 +575,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -612,9 +612,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -642,9 +642,9 @@
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:background="@drawable/stat_row_textview_left"
+                            android:background="@drawable/stat_row_textview_left_green"
                             android:gravity="center"
-                            android:textColor="#FFFFFF" />
+                            android:textColor="@color/colorWhite" />
 
                         <TextView
                             android:layout_width="0dp"

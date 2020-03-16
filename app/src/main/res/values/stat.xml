@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="stat_list">
-        <item>w</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
     </string-array>
 
-    <string-array name="stat_standard">
-        <item>주스텟</item>
-        <item>스공</item>
+    <string-array name="item_kind">
+        <item>무기</item>
+        <item>방어구</item>
     </string-array>
+
+    <string-array name="item_level">
+        <item>70 이하</item>
+        <item>75 ~ 140</item>
+        <item>150</item>
+        <item>160</item>
+        <item>200</item>
+    </string-array>
+
 </resources>
