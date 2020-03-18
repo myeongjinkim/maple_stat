@@ -45,31 +45,61 @@ public class CalculatorOptionFragment extends Fragment {
         textViewLevel.setVisibility(View.INVISIBLE);
         customSpinnerLevel.setVisibility(View.INVISIBLE);
 
-        FragmentManager fm = getChildFragmentManager();
-        fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        fragmentManagerClear();
 
         customSpinnerPart.setListener(new CustomSpinner.OnItemSelectedListener() {
             @Override
             public void onItemSelected(int position) {
-                FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
                 if(customSpinnerPart.getSelectedItemPosition()==0){
                     textViewLevel.setVisibility(View.VISIBLE);
                     customSpinnerLevel.setVisibility(View.VISIBLE);
-                    Fragment calculatorOptionWeaponFragment = new CalculatorOptionWeaponFragment();
-                    transaction.replace(R.id.frameLayout_option_replace, calculatorOptionWeaponFragment);
-                    transaction.addToBackStack(null);
-                    transaction.commit();
-                }else if(customSpinnerPart.getSelectedItemPosition()==1){
+
+                    if(customSpinnerLevel.getSelectedItemPosition()==-1) {
+                        fragmentManagerClear();
+                    }else{
+                        replaceToWeapon();
+                    }
+
+                }else if(customSpinnerPart.getSelectedItemPosition()==1) {
                     textViewLevel.setVisibility(View.INVISIBLE);
                     customSpinnerLevel.setVisibility(View.INVISIBLE);
-                    Fragment calculatorOptionArmorFragment = new CalculatorOptionArmorFragment();
-                    transaction.replace(R.id.frameLayout_option_replace, calculatorOptionArmorFragment);
-                    transaction.addToBackStack(null);
-                    transaction.commit();
+                    replaceToArmor();
+                }
+            }
+        });
+
+        customSpinnerLevel.setListener(new CustomSpinner.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(int position) {
+
+                if(customSpinnerLevel.getSelectedItemPosition()!=-1){
+                    replaceToWeapon();
                 }
             }
         });
 
         return root;
+    }
+    public void replaceToWeapon(){
+
+        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+        Fragment calculatorOptionWeaponFragment = new CalculatorOptionWeaponFragment();
+        transaction.replace(R.id.frameLayout_option_replace, calculatorOptionWeaponFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
+    }
+
+    public void replaceToArmor(){
+
+        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+        Fragment calculatorOptionArmorFragment = new CalculatorOptionArmorFragment();
+        transaction.replace(R.id.frameLayout_option_replace, calculatorOptionArmorFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+    public void fragmentManagerClear(){
+        FragmentManager fm = getChildFragmentManager();
+        fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
     }
 }
