@@ -76,6 +76,11 @@ public class CustomSpinner extends CustomTextOutLine implements View.OnClickList
         }
     }
 
+    public void setPrompt(String prompt) {
+
+        setText(prompt);
+    }
+
     public void setListener(OnItemSelectedListener listener) {
         mListener = listener;
     }

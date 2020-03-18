@@ -55,8 +55,6 @@ public class CalculatorFragment extends Fragment {
         TabLayout tabs = root.findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
 
-
-
         return root;
     }
 
