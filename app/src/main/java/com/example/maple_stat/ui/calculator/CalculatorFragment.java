@@ -15,7 +15,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.maple_stat.R;
 import com.example.maple_stat.ui.calculator.calculator_inner_fragment.CalculatorAdditionalFragment;
 import com.example.maple_stat.ui.calculator.calculator_inner_fragment.CalculatorOptionFragment;
-import com.example.maple_stat.ui.calculator.calculator_inner_fragment.CalculatorOrderFragment;
+import com.example.maple_stat.ui.calculator.calculator_inner_fragment.CalculatorSpellbookFragment;
 import com.example.maple_stat.ui.calculator.calculator_inner_fragment.CalculatorPotentialFragment;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
@@ -45,7 +45,7 @@ public class CalculatorFragment extends Fragment {
         // 각 탭에 들어갈 프라그먼트 생성 및 추가
         fList = new ArrayList<Fragment>();
         fList.add(CalculatorOptionFragment.newInstance());
-        fList.add(CalculatorOrderFragment.newInstance());
+        fList.add(CalculatorSpellbookFragment.newInstance());
         fList.add(CalculatorPotentialFragment.newInstance());
         fList.add(CalculatorAdditionalFragment.newInstance());
 
