@@ -3,12 +3,13 @@
     <color name="colorPrimaryLight">#96EBEB</color>
     <color name="colorPrimary">#32B4DC</color>
     <color name="colorPrimaryDark">#CC0A0A0A</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#DC1E64</color>
     <color name="colorWhite">#FAFAFA</color>
     <color name="colorGray">#F0F0F0</color>
     <color name="colorLineGray">#AAAAAA</color>
     <color name="colorGreenLight">#C8FA14</color>
     <color name="colorGreen">#AADC0A</color>
     <color name="colorGreenDark">#96C800</color>
+    <color name="colorYellow">#FADC64</color>
 
 </resources>

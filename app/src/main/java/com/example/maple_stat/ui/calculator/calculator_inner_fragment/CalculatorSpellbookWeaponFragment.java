@@ -9,10 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import com.example.maple_stat.R;
 
-public class CalculatorSpellbookWeaponArmorFragment extends Fragment {
+public class CalculatorSpellbookWeaponFragment extends Fragment {
 
-    public static CalculatorSpellbookWeaponArmorFragment newInstance(){
-        CalculatorSpellbookWeaponArmorFragment fragment = new CalculatorSpellbookWeaponArmorFragment();
+    public static CalculatorSpellbookWeaponFragment newInstance(){
+        CalculatorSpellbookWeaponFragment fragment = new CalculatorSpellbookWeaponFragment();
         return fragment;
     }
 
@@ -23,7 +23,7 @@ public class CalculatorSpellbookWeaponArmorFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_calculator_spellbook_weapon_armor, container, false);
+        View root = inflater.inflate(R.layout.fragment_calculator_spellbook_weapon, container, false);
 
         return root;
     }

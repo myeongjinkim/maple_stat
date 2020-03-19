@@ -16,6 +16,9 @@ import com.example.maple_stat.custom.CustomSpinner;
 
 public class CalculatorSpellbookFragment extends Fragment {
 
+    public CustomSpinner customSpinnerPart;
+    public CustomSpinner customSpinnerLevel;
+
     public static CalculatorSpellbookFragment newInstance(){
         CalculatorSpellbookFragment fragment = new CalculatorSpellbookFragment();
         return fragment;
@@ -30,37 +33,62 @@ public class CalculatorSpellbookFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_calculator_spellbook, container, false);
 
-        final CustomSpinner customSpinnerPart = (CustomSpinner) root.findViewById(R.id.custom_spinner_part);
-        final CustomSpinner customSpinnerLevel = (CustomSpinner) root.findViewById(R.id.custom_spinner_level);
+        customSpinnerPart = (CustomSpinner) root.findViewById(R.id.custom_spinner_part);
+        customSpinnerLevel = (CustomSpinner) root.findViewById(R.id.custom_spinner_level);
         final TextView textViewLevel = (TextView) root.findViewById(R.id.textView_level);
         textViewLevel.setVisibility(View.INVISIBLE);
         customSpinnerLevel.setVisibility(View.INVISIBLE);
 
-        FragmentManager fm = getChildFragmentManager();
-        fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-
+        fragmentManagerClear();
 
         customSpinnerPart.setListener(new CustomSpinner.OnItemSelectedListener() {
             @Override
             public void onItemSelected(int position) {
-                customSpinnerLevel.setVisibility(View.VISIBLE);
-                textViewLevel.setVisibility(View.VISIBLE);
+                if(customSpinnerPart.getSelectedItemPosition()!=-1){
+                    textViewLevel.setVisibility(View.VISIBLE);
+                    customSpinnerLevel.setVisibility(View.VISIBLE);
+                    replace();
+                }
             }
         });
-
         customSpinnerLevel.setListener(new CustomSpinner.OnItemSelectedListener() {
             @Override
             public void onItemSelected(int position) {
-                FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-                if(customSpinnerLevel.getSelectedItemPosition()!=-1){
-                    Fragment calculatorSpellWeaponArmorFragment = new CalculatorSpellbookWeaponArmorFragment();
-                    transaction.replace(R.id.frameLayout_spellbook_replace, calculatorSpellWeaponArmorFragment);
-                    transaction.addToBackStack(null);
-                    transaction.commit();
-                }
+                replace();
             }
         });
 
         return root;
+    }
+
+    public void replace(){
+        if(customSpinnerLevel.getSelectedItemPosition()!=-1){
+            if(customSpinnerPart.getSelectedItemPosition()==0){
+                replaceToWeapon();
+            }else if(customSpinnerPart.getSelectedItemPosition()==1) {
+                replaceToArmor();
+            }
+        }
+    }
+
+    public void replaceToWeapon(){
+        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+        Fragment calculatorSpellbookWeaponFragment = new CalculatorSpellbookWeaponFragment();
+        transaction.replace(R.id.frameLayout_spellbook_replace, calculatorSpellbookWeaponFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
+    }
+
+    public void replaceToArmor(){
+        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+        Fragment calculatorSpellbookArmorFragment = new CalculatorSpellbookArmorFragment();
+        transaction.replace(R.id.frameLayout_spellbook_replace, calculatorSpellbookArmorFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+    public void fragmentManagerClear(){
+        FragmentManager fm = getChildFragmentManager();
+        fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
     }
 }

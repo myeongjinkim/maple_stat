@@ -20,4 +20,33 @@
         <item>200</item>
     </string-array>
 
+    <string-array name="item_potential_level">
+        <item>레어</item>
+        <item>에픽</item>
+        <item>유니크</item>
+        <item>레전드리</item>
+    </string-array>
+
+    <string-array name="item_potential_armor">
+        <item>주스텟%</item>
+        <item>올스텟%</item>
+        <item>주스텟</item>
+        <item>올스텟</item>
+        <item>10렙당 주스텟</item>
+    </string-array>
+
+    <string-array name="item_potential_weapon">
+        <item>공격력%</item>
+        <item>보공</item>
+        <item>데미지</item>
+        <item>방무</item>
+        <item>크확</item>
+        <item>주스텟%</item>
+        <item>올스텟%</item>
+        <item>10렙당 공</item>
+        <item>공격력</item>
+        <item>주스텟</item>
+        <item>올스텟</item>
+    </string-array>
+
 </resources>

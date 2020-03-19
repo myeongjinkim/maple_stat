@@ -20,7 +20,7 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="3sp"
+                android:layout_margin="10dp"
                 android:background="@color/colorWhite"
                 android:layout_weight="1"
                 android:shrinkColumns="*"
@@ -29,243 +29,84 @@
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="3sp"
-                    android:background="#AAAAAA">
+                    android:background="@drawable/tablerow_top_round"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp">
 
-                    <TextView
+                    <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_margin="3sp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="템 부위"
                         android:textColor="@color/colorWhite"
-                        android:textSize="20sp" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:background="@color/colorWhite"
-                        android:text="0"
-                        android:selectAllOnFocus="true"
-                        android:textSize="20sp"
-                        android:maxLength="5"
-                        android:inputType="number"
-                        android:digits="0123456789"/>
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="공격력"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="20sp" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:background="@color/colorWhite"
-                        android:text="0"
-                        android:selectAllOnFocus="true"
-                        android:textSize="20sp"
-                        android:maxLength="5"
-                        android:inputType="number"
-                        android:digits="0123456789"/>
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="3sp"
-                    android:background="#AAAAAA">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="부스텟"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="20sp" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:background="@color/colorWhite"
-                        android:text="0"
-                        android:selectAllOnFocus="true"
-                        android:textSize="20sp"
-                        android:maxLength="5"
-                        android:inputType="number"
-                        android:digits="0123456789"/>
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="올스텟퍼"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="20sp" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:background="@color/colorWhite"
-                        android:text="0"
-                        android:selectAllOnFocus="true"
-                        android:textSize="20sp"
-                        android:maxLength="5"
-                        android:inputType="number"
-                        android:digits="0123456789"/>
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="3sp"
-                    android:background="#AAAAAA">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="데미지"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="20sp" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:background="@color/colorWhite"
-                        android:text="0"
-                        android:selectAllOnFocus="true"
-                        android:textSize="20sp"
-                        android:maxLength="5"
-                        android:inputType="number"
-                        android:digits="0123456789"/>
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="보공"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="20sp" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:background="@color/colorWhite"
-                        android:text="0"
-                        android:selectAllOnFocus="true"
-                        android:textSize="20sp"
-                        android:maxLength="5"
-                        android:inputType="number"
-                        android:digits="0123456789"/>
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="3sp"
-                    android:background="#AAAAAA">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@color/colorWhite"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@color/colorWhite"
-                        android:gravity="center"
-                        android:textColor="#000000"
                         android:textStyle="bold"
-                        android:text="="
-                        android:textSize="20sp" />
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="@color/colorPrimaryDark" />
 
-                    <TextView
+                    <com.example.maple_stat.custom.CustomSpinner
+                        android:id="@+id/custom_spinner_part"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@color/colorWhite"
-                        android:textSize="20sp" />
+                        android:gravity="center"
+                        android:prompt="@string/spinner_prompt"
+                        android:entries="@array/item_part"
+                        android:textColor="@color/colorYellow"
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                    <com.example.maple_stat.custom.CustomTextOutLine
+                        android:id="@+id/textView_level"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="템 레벨"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                    <com.example.maple_stat.custom.CustomSpinner
+                        android:id="@+id/custom_spinner_level"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:prompt="@string/spinner_prompt"
+                        android:entries="@array/item_level"
+                        android:textColor="@color/colorYellow"
+                        android:textSize="20dp"
+                        android:singleLine="true"
+                        outLine:textStroke="true"
+                        outLine:textStrokeWidth="1.0"
+                        outLine:textStrokeColor="@color/colorPrimaryDark" />
 
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="3sp"
-                    android:background="#AAAAAA">
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp">
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@color/colorWhite"
-                        android:textSize="20sp" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/frameLayout_potential_replace"
+                        android:layout_weight="1">
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3sp"
-                        android:layout_weight="1"
-                        android:background="@color/colorWhite"
-                        android:gravity="center"
-                        android:text="0"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@color/colorWhite"
-                        android:textSize="20sp" />
+                    </FrameLayout>
 
                 </TableRow>
 
