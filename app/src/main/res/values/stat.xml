@@ -40,13 +40,45 @@
         <item>보공</item>
         <item>데미지</item>
         <item>방무</item>
-        <item>크확</item>
-        <item>주스텟%</item>
-        <item>올스텟%</item>
         <item>10렙당 공</item>
         <item>공격력</item>
+        <item>주스텟%</item>
         <item>주스텟</item>
+        <item>올스텟%</item>
         <item>올스텟</item>
+        <item>크확</item>
+
+    </string-array>
+
+    <string-array name="item_additional_armor">
+        <item>주스텟%</item>
+        <item>공격력</item>
+        <item>주스텟</item>
+        <item>올스텟%</item>
+        <item>올스텟</item>
+        <item>부스텟%</item>
+        <item>부스텟</item>
+        <item>10렙당 주스텟</item>
+        <item>10렙당 부스텟</item>
+        <item>크뎀</item>
+    </string-array>
+
+    <string-array name="item_additional_weapon">
+        <item>공격력%</item>
+        <item>공격력</item>
+        <item>보공</item>
+        <item>데미지</item>
+        <item>방무</item>
+        <item>주스텟%</item>
+        <item>주스텟</item>
+        <item>올스텟%</item>
+        <item>올스텟</item>
+        <item>10렙당 공</item>
+        <item>10렙당 주스텟</item>
+        <item>10렙당 부스텟</item>
+        <item>크확</item>
+        <item>크뎀</item>
+
     </string-array>
 
 </resources>
