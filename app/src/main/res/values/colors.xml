@@ -10,6 +10,7 @@
     <color name="colorGreenLight">#C8FA14</color>
     <color name="colorGreen">#AADC0A</color>
     <color name="colorGreenDark">#96C800</color>
+    <color name="colorGreenBright">#82DC14</color>
     <color name="colorYellow">#FADC64</color>
 
 </resources>

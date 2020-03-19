@@ -2,6 +2,7 @@
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:outLine="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.maple_stat.ui.setting.SettingFragment">
     <data>
         <variable
@@ -22,17 +23,124 @@
 
             <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
 
-                <TextView
-                    android:id="@+id/text_setting"
+                <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:textAlignment="center"
-                    android:textSize="20sp"/>
+                    android:background="@color/colorPrimaryDark">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="@drawable/setting_textview_state"
+                        android:gravity="center|left"
+                        android:text="케릭터 기본설정"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="@drawable/setting_textview_state"
+                        android:gravity="center|left"
+                        android:text="장비"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/setting_textview_state"
+                        android:gravity="center|left"
+                        android:text="기타"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="@drawable/setting_textview_state"
+                        android:gravity="center|left"
+                        android:text="링크"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="@drawable/setting_textview_state"
+                        android:gravity="center|left"
+                        android:text="유니온"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="@drawable/setting_textview_state"
+                        android:gravity="center|left"
+                        android:text="농장"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp" />
+
+                </TableRow>
 
             </TableLayout>
 
