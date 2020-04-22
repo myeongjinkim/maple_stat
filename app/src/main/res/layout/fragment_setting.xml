@@ -43,7 +43,8 @@
                         android:gravity="center|left"
                         android:text="케릭터 기본설정"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressCharacterButton(view)}"/>
 
                 </TableRow>
 
@@ -62,7 +63,8 @@
                         android:gravity="center|left"
                         android:text="장비"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressItemButton(view)}"/>
 
                 </TableRow>
 
@@ -81,7 +83,8 @@
                         android:gravity="center|left"
                         android:text="기타"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressEtcButton(view)}"/>
 
                 </TableRow>
 
@@ -100,7 +103,8 @@
                         android:gravity="center|left"
                         android:text="링크"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressLinkButton(view)}"/>
 
                 </TableRow>
 
@@ -119,7 +123,8 @@
                         android:gravity="center|left"
                         android:text="유니온"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressUnionButton(view)}"/>
 
                 </TableRow>
 
@@ -138,7 +143,8 @@
                         android:gravity="center|left"
                         android:text="농장"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressFarmButton(view)}"/>
 
                 </TableRow>
 

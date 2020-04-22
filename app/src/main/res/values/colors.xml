@@ -7,6 +7,7 @@
     <color name="colorWhite">#FAFAFA</color>
     <color name="colorGray">#F0F0F0</color>
     <color name="colorLineGray">#AAAAAA</color>
+    <color name="colorDarkGray">#646464</color>
     <color name="colorGreenLight">#C8FA14</color>
     <color name="colorGreen">#AADC0A</color>
     <color name="colorGreenDark">#96C800</color>
