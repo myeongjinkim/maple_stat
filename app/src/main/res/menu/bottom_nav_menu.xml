@@ -16,9 +16,4 @@
         android:icon="@drawable/ic_zoom_in_black_24dp"
         android:title="@string/title_calculator" />
 
-    <item
-        android:id="@+id/navigation_setting"
-        android:icon="@drawable/ic_settings_black_40dp"
-        android:title="@string/title_setting" />
-
 </menu>

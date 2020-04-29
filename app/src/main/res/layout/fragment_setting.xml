@@ -11,9 +11,7 @@
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="?attr/actionBarSize"
-        android:paddingTop="?attr/actionBarSize">
+        android:layout_height="match_parent">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -38,10 +36,10 @@
                         android:layout_height="70dp"
                         android:layout_weight="1"
                         android:paddingLeft="10dp"
-                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginBottom="0.1dp"
                         android:background="@drawable/setting_textview_state"
                         android:gravity="center|left"
-                        android:text="케릭터 기본설정"
+                        android:text="케릭터"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressCharacterButton(view)}"/>
@@ -58,13 +56,53 @@
                         android:layout_height="70dp"
                         android:layout_weight="1"
                         android:paddingLeft="10dp"
-                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginBottom="0.1dp"
                         android:background="@drawable/setting_textview_state"
                         android:gravity="center|left"
                         android:text="장비"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressItemButton(view)}"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="0.1dp"
+                        android:background="@drawable/setting_textview_state"
+                        android:gravity="center|left"
+                        android:text="펫"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressPetButton(view)}"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="0.1dp"
+                        android:background="@drawable/setting_textview_state"
+                        android:gravity="center|left"
+                        android:text="하이퍼스텟"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressHyperButton(view)}"/>
 
                 </TableRow>
 
@@ -98,7 +136,7 @@
                         android:layout_height="70dp"
                         android:layout_weight="1"
                         android:paddingLeft="10dp"
-                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginBottom="0.1dp"
                         android:background="@drawable/setting_textview_state"
                         android:gravity="center|left"
                         android:text="링크"
@@ -118,7 +156,7 @@
                         android:layout_height="70dp"
                         android:layout_weight="1"
                         android:paddingLeft="10dp"
-                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginBottom="0.1dp"
                         android:background="@drawable/setting_textview_state"
                         android:gravity="center|left"
                         android:text="유니온"
@@ -138,7 +176,6 @@
                         android:layout_height="70dp"
                         android:layout_weight="1"
                         android:paddingLeft="10dp"
-                        android:layout_marginBottom="0.5dp"
                         android:background="@drawable/setting_textview_state"
                         android:gravity="center|left"
                         android:text="농장"

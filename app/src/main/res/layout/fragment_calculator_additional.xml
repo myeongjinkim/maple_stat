@@ -12,107 +12,100 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ScrollView
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
+            android:layout_margin="10dp"
+            android:background="@color/colorWhite"
+            android:layout_weight="1"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
 
-            <TableLayout
+            <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@color/colorWhite"
-                android:layout_weight="1"
-                android:shrinkColumns="*"
-                android:stretchColumns="*">
+                android:background="@drawable/tablerow_top_round"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
 
-                <TableRow
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="템 부위"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomSpinner
+                    android:id="@+id/custom_spinner_part"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:prompt="@string/spinner_prompt"
+                    android:entries="@array/item_part"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:id="@+id/textView_level"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="템 레벨"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomSpinner
+                    android:id="@+id/custom_spinner_level"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:prompt="@string/spinner_prompt"
+                    android:entries="@array/item_level"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/tablerow_top_round"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginRight="3dp">
+                    android:id="@+id/frameLayout_additional_replace"
+                    android:layout_weight="1">
 
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="템 부위"
-                        android:textColor="@color/colorWhite"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:singleLine="true"
-                        outLine:textStroke="true"
-                        outLine:textStrokeWidth="1.0"
-                        outLine:textStrokeColor="@color/colorPrimaryDark" />
+                </FrameLayout>
 
-                    <com.example.maple_stat.custom.CustomSpinner
-                        android:id="@+id/custom_spinner_part"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:prompt="@string/spinner_prompt"
-                        android:entries="@array/item_part"
-                        android:textColor="@color/colorYellow"
-                        android:textSize="20dp"
-                        android:singleLine="true"
-                        outLine:textStroke="true"
-                        outLine:textStrokeWidth="1.0"
-                        outLine:textStrokeColor="@color/colorPrimaryDark" />
+            </TableRow>
 
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:id="@+id/textView_level"
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="템 레벨"
-                        android:textColor="@color/colorWhite"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:singleLine="true"
-                        outLine:textStroke="true"
-                        outLine:textStrokeWidth="1.0"
-                        outLine:textStrokeColor="@color/colorPrimaryDark" />
-
-                    <com.example.maple_stat.custom.CustomSpinner
-                        android:id="@+id/custom_spinner_level"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:prompt="@string/spinner_prompt"
-                        android:entries="@array/item_level"
-                        android:textColor="@color/colorYellow"
-                        android:textSize="20dp"
-                        android:singleLine="true"
-                        outLine:textStroke="true"
-                        outLine:textStrokeWidth="1.0"
-                        outLine:textStrokeColor="@color/colorPrimaryDark" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginRight="3dp">
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/frameLayout_additional_replace"
-                        android:layout_weight="1">
-
-                    </FrameLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-        </ScrollView>
+        </TableLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

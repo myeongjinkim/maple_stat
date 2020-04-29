@@ -24,7 +24,6 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.maple_stat.R;
 import com.example.maple_stat.custom.CustomSpinner;
 import com.example.maple_stat.databinding.FragmentEfficiencyBinding;
-import com.google.android.material.appbar.AppBarLayout;
 
 
 import static android.content.ContentValues.TAG;
@@ -50,21 +49,7 @@ public class EfficiencyFragment extends Fragment {
         efficiencyViewModel =
                 ViewModelProviders.of(this).get(EfficiencyViewModel.class);
         View root = inflater.inflate(R.layout.fragment_efficiency, container, false);
-        final ScrollView scrollViewTest = (ScrollView) root.findViewById(R.id.efficiency_scrollView);
-        final AppBarLayout appBarLayout = (AppBarLayout) getActivity().findViewById(R.id.app_bar);
 
-        //app bar 기본 설정
-        appBarLayout.setSelected(false);
-        scrollViewTest.getViewTreeObserver().addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
-            @Override public void onScrollChanged() {
-
-                if(scrollViewTest.getScrollY()!=0){
-                    appBarLayout.setSelected(true);
-                }else{
-                    appBarLayout.setSelected(false);
-                }
-            }
-        });
 
         CustomSpinner customSpinnerKind_left0 = (CustomSpinner) root.findViewById(R.id.stat_compare_l0);
 
