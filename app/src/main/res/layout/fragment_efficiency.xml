@@ -25,23 +25,26 @@
                 android:layout_height="wrap_content">
 
                 <ImageButton
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:maxWidth="50dp"
+                    android:scaleType="centerInside"
                     android:layout_column="3"
+                    android:background="@drawable/ripple_effect_circle"
                     android:gravity="center"
-                    android:background="@color/colorWhite"
-                    android:src="@drawable/delete_state"
-                    android:onClick="@{(view) -> fragment.pressDeleteButton(view)}"/>
+                    android:onClick="@{(view) -> fragment.pressDeleteButton(view)}"
+                    android:src="@drawable/ic_delete_nomal" />
 
                 <ImageButton
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:maxWidth="50dp"
+                    android:scaleType="centerInside"
                     android:layout_column="4"
+                    android:background="@drawable/ripple_effect_circle"
                     android:gravity="center"
-                    android:background="@color/colorWhite"
-                    android:src="@drawable/add_state"/>
+                    android:onClick="@{(view) -> fragment.pressAddButton(view)}"
+                    android:src="@drawable/ic_add_nomal" />
 
             </TableRow>
 

@@ -65,4 +65,8 @@ public class EfficiencyFragment extends Fragment {
         Log.i(TAG,"지우기");
     }
 
+    public void pressAddButton(View view) {
+        Log.i(TAG,"더하기");
+    }
+
 }
