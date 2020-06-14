@@ -26,7 +26,6 @@ public class SettingActivity extends AppCompatActivity {
         Toolbar setting_toolbar = (Toolbar)findViewById(R.id.setting_toolbar);
         setSupportActionBar(setting_toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        //getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         final AppBarLayout setting_appBarLayout = (AppBarLayout) findViewById(R.id.setting_app_bar);
         final ScrollView scrollViewTest = (ScrollView) findViewById(R.id.setting_scrollView);

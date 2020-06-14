@@ -27,8 +27,6 @@
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:maxWidth="50dp"
-                    android:scaleType="centerInside"
                     android:layout_column="3"
                     android:background="@drawable/ripple_effect_circle"
                     android:gravity="center"
@@ -38,8 +36,6 @@
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:maxWidth="50dp"
-                    android:scaleType="centerInside"
                     android:layout_column="4"
                     android:background="@drawable/ripple_effect_circle"
                     android:gravity="center"

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -88,12 +89,29 @@ public class MainActivity extends AppCompatActivity{
     }
 
     @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        final MenuItem menuItem = menu.findItem(R.id.setting_button);
+        FrameLayout rootView = (FrameLayout) menuItem.getActionView();
+
+        rootView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("눌림");
+                onOptionsItemSelected(menuItem);
+            }
+        });
+
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        System.out.println("들어가라ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ");
         switch (item.getItemId()) {
             case R.id.setting_button: { // 오른쪽 상단 버튼 눌렀을 때
+                System.out.println("눌림");
                 Intent intent = new Intent(getApplicationContext(), SettingActivity.class);
                 startActivity(intent);
+                return true;
             }
         }
         return super.onOptionsItemSelected(item);
