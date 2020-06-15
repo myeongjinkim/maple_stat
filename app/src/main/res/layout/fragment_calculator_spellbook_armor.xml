@@ -28,7 +28,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
                     android:text="스타포스"
@@ -45,8 +45,22 @@
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     android:paddingLeft="10dp"
+                    android:gravity="center|right"
+                    android:text="3"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
                     android:gravity="center|left"
-                    android:text="+ 300"
+                    android:text="성"
                     android:textColor="@color/colorYellow"
                     android:textSize="20dp"
                     android:singleLine="true"
@@ -63,10 +77,10 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
-                    android:text="작 횟수"
+                    android:text="주문서작 횟수"
                     android:textColor="@color/colorAccent"
                     android:textStyle="bold"
                     android:textSize="20dp"
@@ -80,14 +94,29 @@
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     android:paddingLeft="10dp"
-                    android:gravity="center|left"
-                    android:text="+ 300"
+                    android:gravity="center|right"
+                    android:text="9"
                     android:textColor="@color/colorAccent"
                     android:textSize="20dp"
                     android:singleLine="true"
                     outLine:textStroke="true"
                     outLine:textStrokeWidth="0.5"
                     outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|left"
+                    android:text="작"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+
 
             </TableRow>
 
@@ -98,7 +127,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="1.5"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
                     android:text="주스텟"
@@ -113,16 +142,37 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.75"
                     android:paddingLeft="10dp"
-                    android:gravity="center|left"
-                    android:text="+ 300"
+                    android:gravity="center|right"
+                    android:text="+"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
                     android:singleLine="true"
                     outLine:textStroke="true"
                     outLine:textStrokeWidth="0.5"
                     outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.75"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|right"
+                    android:text="300"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
 
             </TableRow>
 
@@ -133,7 +183,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="1.5"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
                     android:text="부스텟"
@@ -148,16 +198,37 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.75"
                     android:paddingLeft="10dp"
-                    android:gravity="center|left"
-                    android:text="+ 0"
+                    android:gravity="center|right"
+                    android:text="+"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
                     android:singleLine="true"
                     outLine:textStroke="true"
                     outLine:textStrokeWidth="0.5"
                     outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.75"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
 
             </TableRow>
 
@@ -168,7 +239,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="1.5"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
                     android:text="공격력"
@@ -183,16 +254,37 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.75"
                     android:paddingLeft="10dp"
-                    android:gravity="center|left"
-                    android:text="+ 0"
+                    android:gravity="center|right"
+                    android:text="+"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
                     android:singleLine="true"
                     outLine:textStroke="true"
                     outLine:textStrokeWidth="0.5"
                     outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.75"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
 
             </TableRow>
 

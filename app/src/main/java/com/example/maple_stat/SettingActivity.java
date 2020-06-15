@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewTreeObserver;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 import com.google.android.material.appbar.AppBarLayout;
 
@@ -47,6 +48,8 @@ public class SettingActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case android.R.id.home:{
+
+                Toast.makeText(this, "Back button pressed.", Toast.LENGTH_SHORT).show();
                 finish();
                 return true;
             }
@@ -59,5 +62,10 @@ public class SettingActivity extends AppCompatActivity {
         if (actionBar != null) {
             getSupportActionBar().setTitle(title);
         }
+    }
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "Back button pressed.", Toast.LENGTH_SHORT).show();
+        finish();
     }
 }

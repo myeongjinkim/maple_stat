@@ -31,6 +31,8 @@ import androidx.navigation.ui.NavigationUI;
 public class MainActivity extends AppCompatActivity{
 
     protected Menu mMenu = null;
+    private long pressedTime = 0;
+    private long finishIntervalTime = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,5 +114,26 @@ public class MainActivity extends AppCompatActivity{
         }
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        if ( pressedTime == 0 ) {
+            Toast.makeText(MainActivity.this, " 한 번 더 누르면 종료됩니다." , Toast.LENGTH_LONG).show();
+            pressedTime = System.currentTimeMillis();
+        }
+        else {
+            long secondPressTime = (System.currentTimeMillis() - pressedTime);
+
+            if ( secondPressTime > finishIntervalTime ) {
+                Toast.makeText(MainActivity.this, " 한 번 더 누르면 종료됩니다." , Toast.LENGTH_LONG).show();
+                pressedTime = 0 ;
+            }
+            else {
+                super.onBackPressed();
+                finish();
+            }
+        }
+    }
+
 
 }
