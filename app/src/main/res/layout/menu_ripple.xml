@@ -15,7 +15,7 @@
             android:layout_width="@dimen/menu_item_icon_size"
             android:layout_height="@dimen/menu_item_icon_size"
             android:layout_gravity="center"
-            android:background="@drawable/ripple_effect_circle"
+            android:background="@drawable/ripple_effect_button_circle"
             android:src="@drawable/ic_settings_black"
             android:scaleType="centerInside"/>
 

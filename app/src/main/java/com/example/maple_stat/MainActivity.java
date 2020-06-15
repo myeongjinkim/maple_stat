@@ -58,10 +58,8 @@ public class MainActivity extends AppCompatActivity{
             @Override public void onScrollChanged() {
                 if(scrollViewTest.getScrollY()!=0){
                     appBarLayout.setSelected(true);
-                    System.out.println("들어가라ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏddddd");
                 }else{
                     appBarLayout.setSelected(false);
-                    System.out.println("들어가라ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏssssssssss");
                 }
             }
         });
@@ -96,7 +94,6 @@ public class MainActivity extends AppCompatActivity{
         rootView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("눌림");
                 onOptionsItemSelected(menuItem);
             }
         });
@@ -108,7 +105,6 @@ public class MainActivity extends AppCompatActivity{
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.setting_button: { // 오른쪽 상단 버튼 눌렀을 때
-                System.out.println("눌림");
                 Intent intent = new Intent(getApplicationContext(), SettingActivity.class);
                 startActivity(intent);
                 return true;

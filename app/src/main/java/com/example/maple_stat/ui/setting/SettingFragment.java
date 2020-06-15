@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -58,48 +59,49 @@ public class SettingFragment extends Fragment {
         transaction.replace(R.id.replace, settingCharacterFragment);
         transaction.addToBackStack(null);
         transaction.commit();*/
-        System.out.println("Farm");
+        Toast.makeText(getActivity(), "Character", Toast.LENGTH_SHORT).show();
+
+
 
     }
 
     public void pressItemButton(View view){
-
-        System.out.println("Item");
+        Toast.makeText(getActivity(), "Item", Toast.LENGTH_SHORT).show();
 
     }
 
     public void pressPetButton(View view){
 
-        System.out.println("Etc");
+        Toast.makeText(getActivity(), "Pet", Toast.LENGTH_SHORT).show();
 
     }
 
     public void pressHyperButton(View view){
 
-        System.out.println("Etc");
+        Toast.makeText(getActivity(), "Hyper", Toast.LENGTH_SHORT).show();
 
     }
 
     public void pressEtcButton(View view){
 
-        System.out.println("Etc");
+        Toast.makeText(getActivity(), "Etc", Toast.LENGTH_SHORT).show();
 
     }
 
     public void pressLinkButton(View view){
 
-        System.out.println("Link");
+        Toast.makeText(getActivity(), "Link", Toast.LENGTH_SHORT).show();
 
     }
 
     public void pressUnionButton(View view){
 
-        System.out.println("Union");
+        Toast.makeText(getActivity(), "Union", Toast.LENGTH_SHORT).show();
 
     }
 
     public void pressFarmButton(View view){
 
-
+        Toast.makeText(getActivity(), "Farm", Toast.LENGTH_SHORT).show();
     }
 }

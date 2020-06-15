@@ -45,7 +45,6 @@ public class SettingActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        System.out.println("--------------------------------들어감");
         switch (item.getItemId()){
             case android.R.id.home:{
                 finish();

@@ -31,18 +31,25 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark">
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
-                        android:layout_weight="1"
-                        android:paddingLeft="10dp"
-                        android:layout_marginBottom="0.1dp"
-                        android:background="@drawable/setting_textview_state"
-                        android:gravity="center|left"
-                        android:text="케릭터"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp"
-                        android:onClick="@{(view) -> fragment.pressCharacterButton(view)}"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:layout_marginBottom="0.1dp">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/ripple_effect_circle"
+                            android:gravity="center|left"
+                            android:text="케릭터"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:onClick="@{(view) -> fragment.pressCharacterButton(view)}"/>
+
+                    </LinearLayout>
 
                 </TableRow>
 
@@ -51,18 +58,27 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark">
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
-                        android:layout_weight="1"
-                        android:paddingLeft="10dp"
-                        android:layout_marginBottom="0.1dp"
-                        android:background="@drawable/setting_textview_state"
-                        android:gravity="center|left"
-                        android:text="장비"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp"
-                        android:onClick="@{(view) -> fragment.pressItemButton(view)}"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:layout_marginBottom="0.1dp">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/ripple_effect_circle"
+                            android:gravity="center|left"
+                            android:text="장비"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:onClick="@{(view) -> fragment.pressItemButton(view)}"/>
+
+                    </LinearLayout>
+
+
 
                 </TableRow>
 
@@ -71,18 +87,25 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark">
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
-                        android:layout_weight="1"
-                        android:paddingLeft="10dp"
-                        android:layout_marginBottom="0.1dp"
-                        android:background="@drawable/setting_textview_state"
-                        android:gravity="center|left"
-                        android:text="펫"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp"
-                        android:onClick="@{(view) -> fragment.pressPetButton(view)}"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:layout_marginBottom="0.1dp">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/ripple_effect_circle"
+                            android:gravity="center|left"
+                            android:text="펫"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:onClick="@{(view) -> fragment.pressPetButton(view)}"/>
+
+                    </LinearLayout>
 
                 </TableRow>
 
@@ -91,18 +114,25 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark">
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
-                        android:layout_weight="1"
-                        android:paddingLeft="10dp"
-                        android:layout_marginBottom="0.1dp"
-                        android:background="@drawable/setting_textview_state"
-                        android:gravity="center|left"
-                        android:text="하이퍼스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp"
-                        android:onClick="@{(view) -> fragment.pressHyperButton(view)}"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:layout_marginBottom="0.1dp">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/ripple_effect_circle"
+                            android:gravity="center|left"
+                            android:text="하이퍼스텟"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:onClick="@{(view) -> fragment.pressHyperButton(view)}"/>
+
+                    </LinearLayout>
 
                 </TableRow>
 
@@ -111,18 +141,25 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark">
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
-                        android:layout_weight="1"
-                        android:paddingLeft="10dp"
-                        android:layout_marginBottom="1dp"
-                        android:background="@drawable/setting_textview_state"
-                        android:gravity="center|left"
-                        android:text="기타"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp"
-                        android:onClick="@{(view) -> fragment.pressEtcButton(view)}"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:layout_marginBottom="1dp">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/ripple_effect_circle"
+                            android:gravity="center|left"
+                            android:text="기타"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:onClick="@{(view) -> fragment.pressEtcButton(view)}"/>
+
+                    </LinearLayout>
 
                 </TableRow>
 
@@ -131,18 +168,25 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark">
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
-                        android:layout_weight="1"
-                        android:paddingLeft="10dp"
-                        android:layout_marginBottom="0.1dp"
-                        android:background="@drawable/setting_textview_state"
-                        android:gravity="center|left"
-                        android:text="링크"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp"
-                        android:onClick="@{(view) -> fragment.pressLinkButton(view)}"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:layout_marginBottom="0.1dp">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/ripple_effect_circle"
+                            android:gravity="center|left"
+                            android:text="링크"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:onClick="@{(view) -> fragment.pressLinkButton(view)}"/>
+
+                    </LinearLayout>
 
                 </TableRow>
 
@@ -151,18 +195,25 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark">
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
-                        android:layout_weight="1"
-                        android:paddingLeft="10dp"
-                        android:layout_marginBottom="0.1dp"
-                        android:background="@drawable/setting_textview_state"
-                        android:gravity="center|left"
-                        android:text="유니온"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp"
-                        android:onClick="@{(view) -> fragment.pressUnionButton(view)}"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:layout_marginBottom="0.1dp">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/ripple_effect_circle"
+                            android:gravity="center|left"
+                            android:text="유니온"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:onClick="@{(view) -> fragment.pressUnionButton(view)}"/>
+
+                    </LinearLayout>
 
                 </TableRow>
 
@@ -171,17 +222,25 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark">
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
-                        android:layout_weight="1"
-                        android:paddingLeft="10dp"
-                        android:background="@drawable/setting_textview_state"
-                        android:gravity="center|left"
-                        android:text="농장"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp"
-                        android:onClick="@{(view) -> fragment.pressFarmButton(view)}"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:layout_marginBottom="0.1dp">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/ripple_effect_circle"
+                            android:gravity="center|left"
+                            android:text="농장"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:onClick="@{(view) -> fragment.pressFarmButton(view)}"/>
+
+                    </LinearLayout>
 
                 </TableRow>
 
