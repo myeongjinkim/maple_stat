@@ -50,24 +50,10 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.8"
+                    android:layout_weight="1.6"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
                     android:text="3"
-                    android:textColor="@color/colorYellow"
-                    android:textSize="20dp"
-                    android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="0.5"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
-
-                <com.example.maple_stat.custom.CustomTextOutLine
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="0.8"
-                    android:paddingLeft="10dp"
-                    android:gravity="center|left"
-                    android:text="성"
                     android:textColor="@color/colorYellow"
                     android:textSize="20dp"
                     android:singleLine="true"
@@ -106,7 +92,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.8"
+                    android:layout_weight="1.6"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
                     android:text="9"
@@ -116,21 +102,6 @@
                     outLine:textStroke="true"
                     outLine:textStrokeWidth="0.5"
                     outLine:textStrokeColor="@color/colorPrimaryDark" />
-
-                <com.example.maple_stat.custom.CustomTextOutLine
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="0.8"
-                    android:paddingLeft="10dp"
-                    android:gravity="center|left"
-                    android:text="작"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="20dp"
-                    android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="0.5"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
-
 
             </TableRow>
 
@@ -169,7 +140,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.8"
+                    android:layout_weight="1.6"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
                     android:text="300"
@@ -179,13 +150,6 @@
                     outLine:textStroke="true"
                     outLine:textStrokeWidth="0.5"
                     outLine:textStrokeColor="@color/colorPrimaryDark" />
-
-                <com.example.maple_stat.custom.CustomTextOutLine
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="0.8"
-                    android:gravity="center"
-                    android:textSize="20dp"/>
 
             </TableRow>
 
@@ -224,7 +188,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.8"
+                    android:layout_weight="1.6"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
                     android:text="0"
@@ -234,13 +198,6 @@
                     outLine:textStroke="true"
                     outLine:textStrokeWidth="0.5"
                     outLine:textStrokeColor="@color/colorPrimaryDark" />
-
-                <com.example.maple_stat.custom.CustomTextOutLine
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="0.8"
-                    android:gravity="center"
-                    android:textSize="20dp"/>
 
             </TableRow>
 
@@ -279,7 +236,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.8"
+                    android:layout_weight="1.6"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
                     android:text="0"
@@ -289,13 +246,6 @@
                     outLine:textStroke="true"
                     outLine:textStrokeWidth="0.5"
                     outLine:textStrokeColor="@color/colorPrimaryDark" />
-
-                <com.example.maple_stat.custom.CustomTextOutLine
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="0.8"
-                    android:gravity="center"
-                    android:textSize="20dp"/>
 
             </TableRow>
 
