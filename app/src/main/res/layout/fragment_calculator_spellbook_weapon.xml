@@ -143,7 +143,7 @@
                     android:layout_weight="1.6"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
-                    android:text="+ 300"
+                    android:text="300"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
                     android:singleLine="true"
