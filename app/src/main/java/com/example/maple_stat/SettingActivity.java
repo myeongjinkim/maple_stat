@@ -27,6 +27,7 @@ public class SettingActivity extends AppCompatActivity {
         Toolbar setting_toolbar = (Toolbar)findViewById(R.id.setting_toolbar);
         setSupportActionBar(setting_toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
         final AppBarLayout setting_appBarLayout = (AppBarLayout) findViewById(R.id.setting_app_bar);
         final ScrollView scrollViewTest = (ScrollView) findViewById(R.id.setting_scrollView);
@@ -49,8 +50,7 @@ public class SettingActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case android.R.id.home:{
 
-                Toast.makeText(this, "Back button pressed.", Toast.LENGTH_SHORT).show();
-                finish();
+                onBackPressed();
                 return true;
             }
         }
@@ -66,6 +66,6 @@ public class SettingActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Toast.makeText(this, "Back button pressed.", Toast.LENGTH_SHORT).show();
-        finish();
+        super.onBackPressed();
     }
 }

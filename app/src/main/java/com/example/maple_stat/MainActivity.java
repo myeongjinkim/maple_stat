@@ -88,20 +88,6 @@ public class MainActivity extends AppCompatActivity{
         return true;
     }
 
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        final MenuItem menuItem = menu.findItem(R.id.setting_button);
-        FrameLayout rootView = (FrameLayout) menuItem.getActionView();
-
-        rootView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onOptionsItemSelected(menuItem);
-            }
-        });
-
-        return super.onPrepareOptionsMenu(menu);
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
