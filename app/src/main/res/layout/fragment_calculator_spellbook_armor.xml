@@ -31,7 +31,7 @@
                     android:layout_weight="2"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
-                    android:text="스타포스"
+                    android:text="스타포스 : "
                     android:textColor="@color/colorYellow"
                     android:textStyle="bold"
                     android:textSize="20dp"
@@ -43,9 +43,16 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.8"
                     android:paddingLeft="10dp"
-                    android:gravity="center|right"
+                    android:gravity="center|left"
                     android:text="3"
                     android:textColor="@color/colorYellow"
                     android:textSize="20dp"
@@ -57,7 +64,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.8"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
                     android:text="성"
@@ -80,7 +87,7 @@
                     android:layout_weight="2"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
-                    android:text="주문서작 횟수"
+                    android:text="주문서 (주흔) : "
                     android:textColor="@color/colorAccent"
                     android:textStyle="bold"
                     android:textSize="20dp"
@@ -92,9 +99,16 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.8"
                     android:paddingLeft="10dp"
-                    android:gravity="center|right"
+                    android:gravity="center|left"
                     android:text="9"
                     android:textColor="@color/colorAccent"
                     android:textSize="20dp"
@@ -106,7 +120,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.8"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
                     android:text="작"
@@ -127,10 +141,10 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1.5"
+                    android:layout_weight="2"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
-                    android:text="주스텟"
+                    android:text="주스텟 : "
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textSize="20dp"
@@ -142,9 +156,8 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.75"
-                    android:paddingLeft="10dp"
-                    android:gravity="center|right"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
                     android:text="+"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
@@ -156,9 +169,9 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.75"
+                    android:layout_weight="0.8"
                     android:paddingLeft="10dp"
-                    android:gravity="center|right"
+                    android:gravity="center|left"
                     android:text="300"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
@@ -170,7 +183,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.8"
                     android:gravity="center"
                     android:textSize="20dp"/>
 
@@ -183,10 +196,10 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1.5"
+                    android:layout_weight="2"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
-                    android:text="부스텟"
+                    android:text="부스텟 : "
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textSize="20dp"
@@ -198,9 +211,8 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.75"
-                    android:paddingLeft="10dp"
-                    android:gravity="center|right"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
                     android:text="+"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
@@ -212,9 +224,9 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.75"
+                    android:layout_weight="0.8"
                     android:paddingLeft="10dp"
-                    android:gravity="center|right"
+                    android:gravity="center|left"
                     android:text="0"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
@@ -226,7 +238,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.8"
                     android:gravity="center"
                     android:textSize="20dp"/>
 
@@ -239,10 +251,10 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1.5"
+                    android:layout_weight="2"
                     android:paddingLeft="10dp"
                     android:gravity="center|left"
-                    android:text="공격력"
+                    android:text="공격력 : "
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textSize="20dp"
@@ -254,9 +266,8 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.75"
-                    android:paddingLeft="10dp"
-                    android:gravity="center|right"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
                     android:text="+"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
@@ -268,9 +279,9 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.75"
+                    android:layout_weight="0.8"
                     android:paddingLeft="10dp"
-                    android:gravity="center|right"
+                    android:gravity="center|left"
                     android:text="0"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
@@ -282,7 +293,7 @@
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.8"
                     android:gravity="center"
                     android:textSize="20dp"/>
 
