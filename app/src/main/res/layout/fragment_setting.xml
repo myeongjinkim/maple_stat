@@ -13,240 +13,236 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ScrollView
+        <FrameLayout
+            android:id="@+id/frameLayout_setting_replace"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/setting_scrollView"
-            android:fillViewport="true">
+            android:layout_margin="10dp"/>
 
-            <TableLayout
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:shrinkColumns="*"
-                android:stretchColumns="*">
+                android:background="@color/colorPrimaryDark">
 
-                <TableRow
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryDark">
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:layout_marginBottom="0.1dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:layout_marginBottom="0.1dp">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center|left"
+                        android:text="케릭터"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressCharacterButton(view)}"/>
 
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="70dp"
-                            android:layout_weight="1"
-                            android:paddingLeft="10dp"
-                            android:background="@drawable/ripple_effect_circle"
-                            android:gravity="center|left"
-                            android:text="케릭터"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="20dp"
-                            android:onClick="@{(view) -> fragment.pressCharacterButton(view)}"/>
+                </LinearLayout>
 
-                    </LinearLayout>
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
 
-                <TableRow
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryDark">
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:layout_marginBottom="0.1dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:layout_marginBottom="0.1dp">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center|left"
+                        android:text="장비"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressItemButton(view)}"/>
 
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="70dp"
-                            android:layout_weight="1"
-                            android:paddingLeft="10dp"
-                            android:background="@drawable/ripple_effect_circle"
-                            android:gravity="center|left"
-                            android:text="장비"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="20dp"
-                            android:onClick="@{(view) -> fragment.pressItemButton(view)}"/>
+                </LinearLayout>
 
-                    </LinearLayout>
+            </TableRow>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
 
-
-                </TableRow>
-
-                <TableRow
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryDark">
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:layout_marginBottom="0.1dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:layout_marginBottom="0.1dp">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center|left"
+                        android:text="펫"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressPetButton(view)}"/>
 
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="70dp"
-                            android:layout_weight="1"
-                            android:paddingLeft="10dp"
-                            android:background="@drawable/ripple_effect_circle"
-                            android:gravity="center|left"
-                            android:text="펫"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="20dp"
-                            android:onClick="@{(view) -> fragment.pressPetButton(view)}"/>
+                </LinearLayout>
 
-                    </LinearLayout>
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
 
-                <TableRow
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryDark">
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:layout_marginBottom="0.1dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:layout_marginBottom="0.1dp">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center|left"
+                        android:text="하이퍼스텟"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressHyperButton(view)}"/>
 
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="70dp"
-                            android:layout_weight="1"
-                            android:paddingLeft="10dp"
-                            android:background="@drawable/ripple_effect_circle"
-                            android:gravity="center|left"
-                            android:text="하이퍼스텟"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="20dp"
-                            android:onClick="@{(view) -> fragment.pressHyperButton(view)}"/>
+                </LinearLayout>
 
-                    </LinearLayout>
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
 
-                <TableRow
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryDark">
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:layout_marginBottom="1dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:layout_marginBottom="1dp">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center|left"
+                        android:text="기타"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressEtcButton(view)}"/>
 
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="70dp"
-                            android:layout_weight="1"
-                            android:paddingLeft="10dp"
-                            android:background="@drawable/ripple_effect_circle"
-                            android:gravity="center|left"
-                            android:text="기타"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="20dp"
-                            android:onClick="@{(view) -> fragment.pressEtcButton(view)}"/>
+                </LinearLayout>
 
-                    </LinearLayout>
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
 
-                <TableRow
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryDark">
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:layout_marginBottom="0.1dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:layout_marginBottom="0.1dp">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center|left"
+                        android:text="링크"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressLinkButton(view)}"/>
 
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="70dp"
-                            android:layout_weight="1"
-                            android:paddingLeft="10dp"
-                            android:background="@drawable/ripple_effect_circle"
-                            android:gravity="center|left"
-                            android:text="링크"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="20dp"
-                            android:onClick="@{(view) -> fragment.pressLinkButton(view)}"/>
+                </LinearLayout>
 
-                    </LinearLayout>
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
 
-                <TableRow
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryDark">
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:layout_marginBottom="0.1dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:layout_marginBottom="0.1dp">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center|left"
+                        android:text="유니온"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressUnionButton(view)}"/>
 
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="70dp"
-                            android:layout_weight="1"
-                            android:paddingLeft="10dp"
-                            android:background="@drawable/ripple_effect_circle"
-                            android:gravity="center|left"
-                            android:text="유니온"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="20dp"
-                            android:onClick="@{(view) -> fragment.pressUnionButton(view)}"/>
+                </LinearLayout>
 
-                    </LinearLayout>
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
 
-                <TableRow
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryDark">
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:layout_marginBottom="0.1dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:layout_marginBottom="0.1dp">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center|left"
+                        android:text="농장"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressFarmButton(view)}"/>
 
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="70dp"
-                            android:layout_weight="1"
-                            android:paddingLeft="10dp"
-                            android:background="@drawable/ripple_effect_circle"
-                            android:gravity="center|left"
-                            android:text="농장"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="20dp"
-                            android:onClick="@{(view) -> fragment.pressFarmButton(view)}"/>
+                </LinearLayout>
 
-                    </LinearLayout>
+            </TableRow>
 
-                </TableRow>
-
-            </TableLayout>
-
-        </ScrollView>
+        </TableLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

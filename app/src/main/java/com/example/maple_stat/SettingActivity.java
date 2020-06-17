@@ -4,6 +4,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.ViewCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.ui.NavigationUI;
 
 import android.animation.Animator;
@@ -15,6 +17,7 @@ import android.view.ViewTreeObserver;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
+import com.example.maple_stat.ui.setting.SettingFragment;
 import com.google.android.material.appbar.AppBarLayout;
 
 public class SettingActivity extends AppCompatActivity {
@@ -43,6 +46,8 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
+        changeFragment(R.string.title_setting);
+
     }
 
     @Override
@@ -57,15 +62,29 @@ public class SettingActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "Back button pressed.", Toast.LENGTH_SHORT).show();
+        super.onBackPressed();
+
+    }
+
     public void setActionBarTitle(int title) {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             getSupportActionBar().setTitle(title);
         }
     }
-    @Override
-    public void onBackPressed() {
-        Toast.makeText(this, "Back button pressed.", Toast.LENGTH_SHORT).show();
-        super.onBackPressed();
+
+    public void changeFragment(int fragmentId){
+
+        setActionBarTitle(fragmentId);
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        Fragment settingFragment = new SettingFragment();
+        transaction.replace(R.id.setting_host_fragment, settingFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
     }
+
 }
