@@ -43,7 +43,8 @@ public class SettingFragment extends Fragment {
     public void pressCharacterButton(View view){
 
         Toast.makeText(getActivity(), "Character", Toast.LENGTH_SHORT).show();
-
+        FragmentActivity activity = getActivity();
+        ((SettingActivity) activity).changeFragment(R.string.character_setting);
 
     }
 

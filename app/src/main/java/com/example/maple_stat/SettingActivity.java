@@ -18,6 +18,7 @@ import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.example.maple_stat.ui.setting.SettingFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterFragment;
 import com.google.android.material.appbar.AppBarLayout;
 
 public class SettingActivity extends AppCompatActivity {
@@ -46,7 +47,8 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
-        changeFragment(R.string.title_setting);
+
+        changeFragment(R.string.spec_setting);
 
     }
 
@@ -65,6 +67,10 @@ public class SettingActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Toast.makeText(this, "Back button pressed.", Toast.LENGTH_SHORT).show();
+        if(getSupportFragmentManager().getBackStackEntryCount()!=0){
+            setActionBarTitle(R.string.spec_setting);
+        }
+
         super.onBackPressed();
 
     }
@@ -80,10 +86,22 @@ public class SettingActivity extends AppCompatActivity {
 
         setActionBarTitle(fragmentId);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        Fragment settingFragment = new SettingFragment();
-        transaction.replace(R.id.setting_host_fragment, settingFragment);
-        transaction.addToBackStack(null);
+        switch (fragmentId){
+            case R.string.spec_setting: {
+                Fragment settingFragment = new SettingFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingFragment);
+                break;
+            }
+            case R.string.character_setting: {
+                Fragment settingCharacterFragment = new SettingCharacterFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+        }
+
         transaction.commit();
+        return;
 
     }
 
