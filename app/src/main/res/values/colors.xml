@@ -9,10 +9,9 @@
     <color name="colorRippleGray">#C8C8C8</color>
     <color name="colorLineGray">#AAAAAA</color>
     <color name="colorDarkGray">#646464</color>
-    <color name="colorGreenLight">#C8FA14</color>
-    <color name="colorGreen">#AADC0A</color>
-    <color name="colorGreenDark">#96C800</color>
-    <color name="colorGreenBright">#82DC14</color>
+    <color name="colorGreenLight">#CCFF00</color>
+    <color name="colorGreen">#AADC00</color>
+    <color name="colorGreenDark">#82B400</color>
     <color name="colorYellow">#FADC64</color>
 
 </resources>

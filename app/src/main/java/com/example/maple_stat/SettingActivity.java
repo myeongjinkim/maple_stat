@@ -47,7 +47,6 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
-
         changeFragment(R.string.spec_setting);
 
     }
