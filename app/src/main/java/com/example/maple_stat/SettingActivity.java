@@ -19,6 +19,13 @@ import android.widget.Toast;
 
 import com.example.maple_stat.ui.setting.SettingFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingEtcFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingFarmFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingHyperFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingItemFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingLinkFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingPetFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingUnionFragment;
 import com.google.android.material.appbar.AppBarLayout;
 
 public class SettingActivity extends AppCompatActivity {
@@ -94,6 +101,48 @@ public class SettingActivity extends AppCompatActivity {
             case R.string.character_setting: {
                 Fragment settingCharacterFragment = new SettingCharacterFragment();
                 transaction.replace(R.id.frameLayout_setting_replace, settingCharacterFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.item_setting: {
+                Fragment settingItemFragment = new SettingItemFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingItemFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.pet_setting: {
+                Fragment settingPetFragment = new SettingPetFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingPetFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.hyper_setting: {
+                Fragment settingHyperFragment = new SettingHyperFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingHyperFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.etc_setting: {
+                Fragment settingEtcFragment = new SettingEtcFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingEtcFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.link_setting: {
+                Fragment settingLinkFragment = new SettingLinkFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingLinkFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.union_setting: {
+                Fragment settingUnionFragment = new SettingUnionFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingUnionFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.farm_setting: {
+                Fragment settingFarmFragment = new SettingFarmFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingFarmFragment);
                 transaction.addToBackStack(null);
                 break;
             }

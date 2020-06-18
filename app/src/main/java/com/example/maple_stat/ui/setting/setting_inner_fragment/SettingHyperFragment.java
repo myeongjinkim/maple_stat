@@ -27,7 +27,7 @@ public class SettingHyperFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_setting_character, container, false);
+        View root = inflater.inflate(R.layout.fragment_setting_hyper, container, false);
 
         binding = DataBindingUtil.bind(root);
         binding.setFragment(this);
