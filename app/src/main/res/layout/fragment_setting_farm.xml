@@ -2,11 +2,11 @@
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterFragment">
+    tools:context="com.example.maple_stat.ui.setting.setting_inner_fragment.SettingFarmFragment">
     <data>
         <variable
             name="fragment"
-            type="com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterFragment"/>
+            type="com.example.maple_stat.ui.setting.setting_inner_fragment.SettingFarmFragment"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

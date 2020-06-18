@@ -9,14 +9,14 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import com.example.maple_stat.R;
-import com.example.maple_stat.databinding.FragmentSettingCharacterBinding;
+import com.example.maple_stat.databinding.FragmentSettingEtcBinding;
 
-public class SettingCharacterFragment extends Fragment {
+public class SettingEtcFragment extends Fragment {
 
-    public FragmentSettingCharacterBinding binding;
+    public FragmentSettingEtcBinding binding;
 
-    public static SettingCharacterFragment newInstance(){
-        SettingCharacterFragment fragment = new SettingCharacterFragment();
+    public static SettingEtcFragment newInstance(){
+        SettingEtcFragment fragment = new SettingEtcFragment();
         return fragment;
     }
 

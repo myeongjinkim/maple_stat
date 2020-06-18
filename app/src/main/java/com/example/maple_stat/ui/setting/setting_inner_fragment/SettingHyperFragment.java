@@ -9,14 +9,14 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import com.example.maple_stat.R;
-import com.example.maple_stat.databinding.FragmentSettingCharacterBinding;
+import com.example.maple_stat.databinding.FragmentSettingHyperBinding;
 
-public class SettingCharacterFragment extends Fragment {
+public class SettingHyperFragment extends Fragment {
 
-    public FragmentSettingCharacterBinding binding;
+    public FragmentSettingHyperBinding binding;
 
-    public static SettingCharacterFragment newInstance(){
-        SettingCharacterFragment fragment = new SettingCharacterFragment();
+    public static SettingHyperFragment newInstance(){
+        SettingHyperFragment fragment = new SettingHyperFragment();
         return fragment;
     }
 
