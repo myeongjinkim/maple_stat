@@ -72,13 +72,10 @@ public class SettingActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "Back button pressed.", Toast.LENGTH_SHORT).show();
         if(getSupportFragmentManager().getBackStackEntryCount()!=0){
             setActionBarTitle(R.string.spec_setting);
         }
-
         super.onBackPressed();
-
     }
 
     public void setActionBarTitle(int title) {
