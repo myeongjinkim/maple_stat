@@ -15,14 +15,14 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_margin="10dp"
+            android:layout_weight="1"
             android:shrinkColumns="*"
             android:stretchColumns="*">
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp">
 
@@ -41,7 +41,6 @@
                     outLine:textStrokeWidth="1.0"
                     outLine:textStrokeColor="#000000" />
 
-
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -59,7 +58,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp">
 
@@ -94,7 +93,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp">
 
@@ -130,7 +129,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp">
 
@@ -166,7 +165,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp">
 
@@ -231,7 +230,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp">
 
@@ -296,7 +295,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp">
 
@@ -361,7 +360,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp">
 
@@ -427,7 +426,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp">
 
@@ -493,7 +492,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp">
 
@@ -559,7 +558,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp">
 
@@ -569,10 +568,10 @@
                     android:layout_weight="1"
                     android:background="@drawable/stat_row_textview_left_dark"
                     android:gravity="center"
-                    android:text="아케인포스"
+                    android:text="아케인"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
-                    android:textSize="14dp"
+                    android:textSize="20dp"
                     android:singleLine="true"
                     outLine:textStroke="true"
                     outLine:textStrokeWidth="1.0"

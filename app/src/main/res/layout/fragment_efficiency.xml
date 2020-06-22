@@ -9,16 +9,21 @@
             name="fragment"
             type="com.example.maple_stat.ui.efficiency.EfficiencyFragment"/>
     </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/tableLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:shrinkColumns="*"
-            android:stretchColumns="*">
+            android:stretchColumns="*"
+            outLine:layout_constraintEnd_toEndOf="parent"
+            outLine:layout_constraintStart_toStartOf="parent"
+            outLine:layout_constraintTop_toTopOf="parent">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -47,35 +52,35 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorLineGray"
-                android:layout_marginBottom="10dp">
+                android:layout_marginTop="10dp"
+                android:background="@color/colorLineGray">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
                     android:layout_weight="1"
                     android:background="@color/colorWhite"
-                    android:layout_marginBottom="0.5dp"
+                    android:orientation="horizontal"
                     android:paddingTop="10dp"
-                    android:paddingBottom="20dp"
-                    android:orientation="horizontal">
+                    android:paddingBottom="20dp">
 
                     <com.example.maple_stat.custom.CustomSpinner
                         android:id="@+id/stat_compare_l0"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:prompt="@string/spinner_prompt"
-                        android:entries="@array/stat_list"
                         android:background="@drawable/spinner_left_state"
+                        android:entries="@array/stat_list"
                         android:gravity="center"
+                        android:prompt="@string/spinner_prompt"
+                        android:singleLine="true"
                         android:textColor="@color/colorWhite"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:singleLine="true"
                         outLine:textStroke="true"
-                        outLine:textStrokeWidth="1.0"
-                        outLine:textStrokeColor="#000000" />
+                        outLine:textStrokeColor="#000000"
+                        outLine:textStrokeWidth="1.0" />
 
                     <EditText
                         android:layout_width="0dp"
@@ -88,7 +93,7 @@
                         android:maxLength="5"
                         android:selectAllOnFocus="true"
                         android:text="1"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -104,17 +109,17 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:prompt="@string/spinner_prompt"
-                        android:entries="@array/stat_list"
                         android:background="@drawable/spinner_left_state"
+                        android:entries="@array/stat_list"
                         android:gravity="center"
+                        android:prompt="@string/spinner_prompt"
+                        android:singleLine="true"
                         android:textColor="@color/colorWhite"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:singleLine="true"
                         outLine:textStroke="true"
-                        outLine:textStrokeWidth="1.0"
-                        outLine:textStrokeColor="#000000" />
+                        outLine:textStrokeColor="#000000"
+                        outLine:textStrokeWidth="1.0" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -123,7 +128,7 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                 </LinearLayout>
 
@@ -132,18 +137,18 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorLineGray"
-                android:layout_marginBottom="10dp">
+                android:layout_marginTop="10dp"
+                android:background="@color/colorLineGray">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
                     android:layout_weight="1"
                     android:background="@color/colorWhite"
-                    android:layout_marginBottom="0.5dp"
+                    android:orientation="horizontal"
                     android:paddingTop="10dp"
-                    android:paddingBottom="20dp"
-                    android:orientation="horizontal">
+                    android:paddingBottom="20dp">
 
                     <Spinner
                         android:layout_width="0dp"
@@ -164,7 +169,7 @@
                         android:maxLength="5"
                         android:selectAllOnFocus="true"
                         android:text="1"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -190,7 +195,7 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                 </LinearLayout>
 
@@ -199,18 +204,18 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorLineGray"
-                android:layout_marginBottom="10dp">
+                android:layout_marginTop="10dp"
+                android:background="@color/colorLineGray">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
                     android:layout_weight="1"
                     android:background="@color/colorWhite"
-                    android:layout_marginBottom="0.5dp"
+                    android:orientation="horizontal"
                     android:paddingTop="10dp"
-                    android:paddingBottom="20dp"
-                    android:orientation="horizontal">
+                    android:paddingBottom="20dp">
 
                     <Spinner
                         android:layout_width="0dp"
@@ -231,7 +236,7 @@
                         android:maxLength="5"
                         android:selectAllOnFocus="true"
                         android:text="1"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -257,7 +262,7 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                 </LinearLayout>
 
@@ -266,18 +271,18 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorLineGray"
-                android:layout_marginBottom="10dp">
+                android:layout_marginTop="10dp"
+                android:background="@color/colorLineGray">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
                     android:layout_weight="1"
                     android:background="@color/colorWhite"
-                    android:layout_marginBottom="0.5dp"
+                    android:orientation="horizontal"
                     android:paddingTop="10dp"
-                    android:paddingBottom="20dp"
-                    android:orientation="horizontal">
+                    android:paddingBottom="20dp">
 
                     <Spinner
                         android:layout_width="0dp"
@@ -298,7 +303,7 @@
                         android:maxLength="5"
                         android:selectAllOnFocus="true"
                         android:text="1"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -324,7 +329,7 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                 </LinearLayout>
 
@@ -333,18 +338,18 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorLineGray"
-                android:layout_marginBottom="10dp">
+                android:layout_marginTop="10dp"
+                android:background="@color/colorLineGray">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
                     android:layout_weight="1"
                     android:background="@color/colorWhite"
-                    android:layout_marginBottom="0.5dp"
+                    android:orientation="horizontal"
                     android:paddingTop="10dp"
-                    android:paddingBottom="20dp"
-                    android:orientation="horizontal">
+                    android:paddingBottom="20dp">
 
                     <Spinner
                         android:layout_width="0dp"
@@ -365,7 +370,7 @@
                         android:maxLength="5"
                         android:selectAllOnFocus="true"
                         android:text="1"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -391,279 +396,12 @@
                         android:background="@drawable/stat_row_textview_right"
                         android:gravity="center"
                         android:text="0"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                 </LinearLayout>
 
             </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorLineGray"
-                android:layout_marginBottom="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/colorWhite"
-                    android:layout_marginBottom="0.5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="20dp"
-                    android:orientation="horizontal">
-
-                    <Spinner
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left_green"
-                        android:gravity="center"
-                        android:textColor="@color/colorWhite" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_right"
-                        android:digits="0123456789"
-                        android:gravity="center"
-                        android:inputType="number"
-                        android:maxLength="5"
-                        android:selectAllOnFocus="true"
-                        android:text="1"
-                        android:textSize="20dp"/>
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="0.2"
-                        android:gravity="center"
-                        android:text="="
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <Spinner
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left_green"
-                        android:gravity="center"
-                        android:textColor="@color/colorWhite" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_right"
-                        android:gravity="center"
-                        android:text="0"
-                        android:textSize="20dp"/>
-
-                </LinearLayout>
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorLineGray"
-                android:layout_marginBottom="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/colorWhite"
-                    android:layout_marginBottom="0.5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="20dp"
-                    android:orientation="horizontal">
-
-                    <Spinner
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left_green"
-                        android:gravity="center"
-                        android:textColor="@color/colorWhite" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_right"
-                        android:digits="0123456789"
-                        android:gravity="center"
-                        android:inputType="number"
-                        android:maxLength="5"
-                        android:selectAllOnFocus="true"
-                        android:text="1"
-                        android:textSize="20dp"/>
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="0.2"
-                        android:gravity="center"
-                        android:text="="
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <Spinner
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left_green"
-                        android:gravity="center"
-                        android:textColor="@color/colorWhite" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_right"
-                        android:gravity="center"
-                        android:text="0"
-                        android:textSize="20dp"/>
-
-                </LinearLayout>
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorLineGray"
-                android:layout_marginBottom="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/colorWhite"
-                    android:layout_marginBottom="0.5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="20dp"
-                    android:orientation="horizontal">
-
-                    <Spinner
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left_green"
-                        android:gravity="center"
-                        android:textColor="@color/colorWhite" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_right"
-                        android:digits="0123456789"
-                        android:gravity="center"
-                        android:inputType="number"
-                        android:maxLength="5"
-                        android:selectAllOnFocus="true"
-                        android:text="1"
-                        android:textSize="20dp"/>
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="0.2"
-                        android:gravity="center"
-                        android:text="="
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <Spinner
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left_green"
-                        android:gravity="center"
-                        android:textColor="@color/colorWhite" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_right"
-                        android:gravity="center"
-                        android:text="0"
-                        android:textSize="20dp"/>
-
-                </LinearLayout>
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorLineGray"
-                android:layout_marginBottom="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/colorWhite"
-                    android:layout_marginBottom="0.5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="20dp"
-                    android:orientation="horizontal">
-
-                    <Spinner
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left_green"
-                        android:gravity="center"
-                        android:textColor="@color/colorWhite" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_right"
-                        android:digits="0123456789"
-                        android:gravity="center"
-                        android:inputType="number"
-                        android:maxLength="5"
-                        android:selectAllOnFocus="true"
-                        android:text="1"
-                        android:textSize="20dp"/>
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="0.2"
-                        android:gravity="center"
-                        android:text="="
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <Spinner
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_left_green"
-                        android:gravity="center"
-                        android:textColor="@color/colorWhite" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stat_row_textview_right"
-                        android:gravity="center"
-                        android:text="0"
-                        android:textSize="20dp"/>
-
-                </LinearLayout>
-
-            </TableRow>
 
         </TableLayout>
 
