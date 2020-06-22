@@ -23,7 +23,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="wrap_content">
 
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
@@ -60,7 +60,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="wrap_content">
 
                 <com.example.maple_stat.custom.CustomSpinner
                     android:layout_width="0dp"
@@ -96,7 +96,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="wrap_content">
 
                 <com.example.maple_stat.custom.CustomSpinner
                     android:layout_width="0dp"
@@ -132,7 +132,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="wrap_content">
 
                 <com.example.maple_stat.custom.CustomSpinner
                     android:layout_width="0dp"
@@ -176,8 +176,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="3sp">
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="0dp"
@@ -194,8 +193,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="3sp">
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="0dp"
