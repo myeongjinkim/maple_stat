@@ -14,12 +14,15 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@color/colorWhite"
             android:layout_weight="1"
             android:shrinkColumns="*"
-            android:stretchColumns="*">
+            android:stretchColumns="*"
+            outLine:layout_constraintEnd_toEndOf="parent"
+            outLine:layout_constraintStart_toStartOf="parent"
+            outLine:layout_constraintTop_toTopOf="parent">
 
             <TableRow
                 android:layout_width="match_parent"

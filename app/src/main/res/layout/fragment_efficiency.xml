@@ -16,7 +16,7 @@
 
         <TableLayout
             android:id="@+id/tableLayout"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:shrinkColumns="*"
@@ -120,6 +120,73 @@
                         outLine:textStroke="true"
                         outLine:textStrokeColor="#000000"
                         outLine:textStrokeWidth="1.0" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_right"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorLineGray">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp">
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_left_green"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_right"
+                        android:digits="0123456789"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:selectAllOnFocus="true"
+                        android:text="1"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="="
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/stat_row_textview_left_green"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite" />
 
                     <TextView
                         android:layout_width="0dp"
