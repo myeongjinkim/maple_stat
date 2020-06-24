@@ -29,19 +29,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageButton
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_column="3"
+                    android:layout_weight="3"
+                    android:gravity="center" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
                     android:background="@drawable/ripple_effect_button_circle"
                     android:gravity="center"
                     android:onClick="@{(view) -> fragment.pressDeleteButton(view)}"
                     android:src="@drawable/ic_delete_nomal" />
 
                 <ImageButton
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_column="4"
+                    android:layout_weight="1"
                     android:background="@drawable/ripple_effect_button_circle"
                     android:gravity="center"
                     android:onClick="@{(view) -> fragment.pressAddButton(view)}"
