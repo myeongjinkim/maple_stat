@@ -41,7 +41,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/ripple_effect_button_circle"
                     android:gravity="center"
-                    android:onClick="@{(view) -> fragment.pressResetButton(view)}"
+                    android:onClick="@{(view) -> fragment.pressHyperResetButton(view)}"
                     android:src="@drawable/ic_refresh_red" />
 
                 <ImageButton
@@ -50,7 +50,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/ripple_effect_button_circle"
                     android:gravity="center"
-                    android:onClick="@{(view) -> fragment.pressAutoButton(view)}"
+                    android:onClick="@{(view) -> fragment.pressHyperAutoButton(view)}"
                     android:src="@drawable/ic_auto" />
 
             </TableRow>

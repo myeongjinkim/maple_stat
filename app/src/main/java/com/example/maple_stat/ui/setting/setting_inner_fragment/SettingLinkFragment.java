@@ -1,6 +1,7 @@
 package com.example.maple_stat.ui.setting.setting_inner_fragment;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import com.example.maple_stat.R;
 import com.example.maple_stat.databinding.FragmentSettingLinkBinding;
+
+import static android.content.ContentValues.TAG;
 
 public class SettingLinkFragment extends Fragment {
 
@@ -33,5 +36,12 @@ public class SettingLinkFragment extends Fragment {
         binding.setFragment(this);
 
         return root;
+    }
+    public void pressLinkAutoButton(View view) {
+        Log.i(TAG,"자동");
+    }
+
+    public void pressLinkResetButton(View view) {
+        Log.i(TAG,"초기화");
     }
 }

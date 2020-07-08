@@ -38,11 +38,11 @@ public class SettingHyperFragment extends Fragment {
         return root;
     }
 
-    public void pressAutoButton(View view) {
+    public void pressHyperAutoButton(View view) {
         Log.i(TAG,"자동");
     }
 
-    public void pressResetButton(View view) {
+    public void pressHyperResetButton(View view) {
         Log.i(TAG,"초기화");
     }
 }

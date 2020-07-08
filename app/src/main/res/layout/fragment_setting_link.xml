@@ -2,6 +2,7 @@
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:outLine="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.maple_stat.ui.setting.setting_inner_fragment.SettingLinkFragment">
     <data>
         <variable
@@ -12,7 +13,525 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            outLine:layout_constraintEnd_toEndOf="parent"
+            outLine:layout_constraintStart_toStartOf="parent"
+            outLine:layout_constraintTop_toTopOf="parent">
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_effect_button_circle"
+                    android:gravity="center"
+                    android:onClick="@{(view) -> fragment.pressLinkResetButton(view)}"
+                    android:src="@drawable/ic_refresh_red" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_effect_button_circle"
+                    android:gravity="center"
+                    android:onClick="@{(view) -> fragment.pressLinkAutoButton(view)}"
+                    android:src="@drawable/ic_auto" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="3dp">
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="3dp">
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="3dp">
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="3dp">
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="3dp">
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="3dp">
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/setting_row_textview_blue"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="#000000" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="3dp">
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:text="="
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_row_textview_left_green"
+                    android:gravity="center"
+                    android:text="주스텟"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="1.0"
+                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <com.example.maple_stat.custom.CustomTextOutLine
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_row_textview_right"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    outLine:textStroke="true"
+                    outLine:textStrokeWidth="0.5"
+                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorWhite"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+
+
+
+        </TableLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
