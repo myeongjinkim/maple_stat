@@ -15,15 +15,19 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:shrinkColumns="*"
-            android:stretchColumns="*">
+            android:stretchColumns="*"
+            outLine:layout_constraintEnd_toEndOf="parent"
+            outLine:layout_constraintStart_toStartOf="parent"
+            outLine:layout_constraintTop_toTopOf="parent">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_margin="3dp">
 
                 <com.example.maple_stat.custom.CustomTextOutLine
@@ -53,13 +57,13 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_margin="3dp">
 
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:layout_marginLeft="2dp"
                     android:background="@drawable/stat_row_textview_left_dark"
                     android:gravity="center"
                     android:text="펫장비 공/마"
@@ -89,6 +93,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_margin="3dp">
 
                 <com.example.maple_stat.custom.CustomTextOutLine
@@ -104,6 +109,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_margin="3dp">
 
                 <com.example.maple_stat.custom.CustomTextOutLine
@@ -133,13 +139,13 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_margin="3dp">
 
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:layout_marginLeft="2dp"
                     android:background="@drawable/stat_row_textview_left_dark"
                     android:gravity="center"
                     android:text="펫장비 공/마"
@@ -169,6 +175,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_margin="3dp">
 
                 <com.example.maple_stat.custom.CustomTextOutLine
@@ -183,6 +190,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_margin="3dp">
 
                 <com.example.maple_stat.custom.CustomTextOutLine
@@ -212,13 +220,13 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_margin="3dp">
 
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:layout_marginLeft="2dp"
                     android:background="@drawable/stat_row_textview_left_dark"
                     android:gravity="center"
                     android:text="펫장비 공/마"
