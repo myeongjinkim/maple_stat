@@ -31,30 +31,6 @@
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:background="@drawable/setting_button_blue"
-                    android:gravity="center"
-                    android:text="심볼"
-                    android:textColor="@color/colorWhite"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="1.0"
-                    outLine:textStrokeColor="#000000" />
-
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_margin="3dp">
-
-                <com.example.maple_stat.custom.CustomTextOutLine
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
                     android:background="@drawable/stat_row_textview_left_dark"
                     android:gravity="center"
                     android:text="여로"
