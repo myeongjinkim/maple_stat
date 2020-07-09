@@ -27,6 +27,7 @@ public class SettingFragment extends Fragment {
 
         binding = DataBindingUtil.bind(root);
         binding.setFragment(this);
+        ((SettingActivity) getActivity()).setActionBarTitle(R.string.spec_setting);
 
         return root;
     }

@@ -18,7 +18,11 @@ import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.example.maple_stat.ui.setting.SettingFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterAbilityFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterNormalFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterSymbolFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterTendencyFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingEtcFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingFarmFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingHyperFragment;
@@ -73,9 +77,10 @@ public class SettingActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if(getSupportFragmentManager().getBackStackEntryCount()!=0){
-            setActionBarTitle(R.string.spec_setting);
+            getSupportFragmentManager().popBackStack();
+        }else{
+            super.onBackPressed();
         }
-        super.onBackPressed();
     }
 
     public void setActionBarTitle(int title) {
@@ -98,6 +103,30 @@ public class SettingActivity extends AppCompatActivity {
             case R.string.character_setting: {
                 Fragment settingCharacterFragment = new SettingCharacterFragment();
                 transaction.replace(R.id.frameLayout_setting_replace, settingCharacterFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.character_normal_setting: {
+                Fragment settingCharacterNormalFragment = new SettingCharacterNormalFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterNormalFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.character_ability_setting: {
+                Fragment settingCharacterAbilityFragment = new SettingCharacterAbilityFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterAbilityFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.character_tendency_setting: {
+                Fragment settingCharacterTendencyFragment = new SettingCharacterTendencyFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterTendencyFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.character_symbol_setting: {
+                Fragment settingCharacterSymbolFragment = new SettingCharacterSymbolFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterSymbolFragment);
                 transaction.addToBackStack(null);
                 break;
             }

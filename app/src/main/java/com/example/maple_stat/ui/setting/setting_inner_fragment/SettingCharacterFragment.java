@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import com.example.maple_stat.R;
+import com.example.maple_stat.SettingActivity;
 import com.example.maple_stat.databinding.FragmentSettingCharacterBinding;
 
 public class SettingCharacterFragment extends Fragment {
@@ -31,7 +32,31 @@ public class SettingCharacterFragment extends Fragment {
 
         binding = DataBindingUtil.bind(root);
         binding.setFragment(this);
+        ((SettingActivity) getActivity()).setActionBarTitle(R.string.character_setting);
 
         return root;
     }
+    public void pressCharacterNormalButton(View view){
+
+        ((SettingActivity) getActivity()).changeFragment(R.string.character_normal_setting);
+    }
+
+    public void pressCharacterAbilityButton(View view){
+
+        ((SettingActivity) getActivity()).changeFragment(R.string.character_ability_setting);
+    }
+
+    public void pressCharacterTendencyButton(View view){
+
+        ((SettingActivity) getActivity()).changeFragment(R.string.character_tendency_setting);
+    }
+
+    public void pressCharacterSymbolButton(View view){
+
+        ((SettingActivity) getActivity()).changeFragment(R.string.character_symbol_setting);
+    }
+
+
+
+
 }

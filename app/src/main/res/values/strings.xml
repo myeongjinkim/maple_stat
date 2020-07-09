@@ -6,6 +6,12 @@
     <string name="spinner_prompt">-선택-</string>
     <string name="spec_setting">스펙 설정</string>
     <string name="character_setting">케릭터 설정</string>
+
+    <string name="character_normal_setting">케릭터 기본 설정</string>
+    <string name="character_ability_setting">케릭터 어빌리티 설정</string>
+    <string name="character_tendency_setting">케릭터 성향 설정</string>
+    <string name="character_symbol_setting">케릭터 심볼 설정</string>
+
     <string name="item_setting">장비 설정</string>
     <string name="pet_setting">펫 설정</string>
     <string name="hyper_setting">하이퍼스텟 설정</string>
