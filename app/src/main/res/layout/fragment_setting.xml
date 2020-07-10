@@ -160,7 +160,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="기타"
+                        android:text="기타 버프"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressEtcButton(view)}"/>
