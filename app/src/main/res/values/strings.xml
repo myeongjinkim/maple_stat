@@ -17,7 +17,12 @@
     <string name="hyper_setting">하이퍼스텟 설정</string>
     <string name="etc_setting">기타 설정</string>
     <string name="link_setting">링크 설정</string>
+
     <string name="union_setting">유니온 설정</string>
+    <string name="union_arrangement_setting">유니온 배치</string>
+    <string name="union_raid_setting">유니온 공격대원</string>
+
+
     <string name="farm_setting">농장 설정</string>
 
 </resources>

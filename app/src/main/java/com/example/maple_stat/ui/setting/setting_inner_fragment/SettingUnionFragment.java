@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import com.example.maple_stat.R;
+import com.example.maple_stat.SettingActivity;
 import com.example.maple_stat.databinding.FragmentSettingUnionBinding;
 
 public class SettingUnionFragment extends Fragment {
@@ -31,7 +32,17 @@ public class SettingUnionFragment extends Fragment {
 
         binding = DataBindingUtil.bind(root);
         binding.setFragment(this);
+        ((SettingActivity) getActivity()).setActionBarTitle(R.string.union_setting);
 
         return root;
+    }
+    public void pressUnionArrangementButton(View view){
+
+        ((SettingActivity) getActivity()).changeFragment(R.string.union_arrangement_setting);
+    }
+
+    public void pressUnionRaidButton(View view){
+
+        ((SettingActivity) getActivity()).changeFragment(R.string.union_raid_setting);
     }
 }

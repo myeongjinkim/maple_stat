@@ -29,7 +29,9 @@ import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingHyperFrag
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingItemFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingLinkFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingPetFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingUnionArrangementFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingUnionFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingUnionRaidFragment;
 import com.google.android.material.appbar.AppBarLayout;
 
 public class SettingActivity extends AppCompatActivity {
@@ -163,6 +165,18 @@ public class SettingActivity extends AppCompatActivity {
             case R.string.union_setting: {
                 Fragment settingUnionFragment = new SettingUnionFragment();
                 transaction.replace(R.id.frameLayout_setting_replace, settingUnionFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.union_arrangement_setting: {
+                Fragment settingUnionArrangementFragment = new SettingUnionArrangementFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingUnionArrangementFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.union_raid_setting: {
+                Fragment settingUnionRaidFragment = new SettingUnionRaidFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingUnionRaidFragment);
                 transaction.addToBackStack(null);
                 break;
             }
