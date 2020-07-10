@@ -19,10 +19,14 @@ import android.widget.Toast;
 
 import com.example.maple_stat.ui.setting.SettingFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterAbilityFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterBlessingFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterGuildFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterLabelFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterNormalFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterSymbolFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterTendencyFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterTitleFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingEtcFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingFarmFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingHyperFragment;
@@ -129,6 +133,30 @@ public class SettingActivity extends AppCompatActivity {
             case R.string.character_symbol_setting: {
                 Fragment settingCharacterSymbolFragment = new SettingCharacterSymbolFragment();
                 transaction.replace(R.id.frameLayout_setting_replace, settingCharacterSymbolFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.character_guild_setting: {
+                Fragment settingCharacterGuildFragment = new SettingCharacterGuildFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterGuildFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.character_blessing_setting: {
+                Fragment settingCharacterBlessingFragment = new SettingCharacterBlessingFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterBlessingFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.character_label_setting: {
+                Fragment settingCharacterLabelFragment = new SettingCharacterLabelFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterLabelFragment);
+                transaction.addToBackStack(null);
+                break;
+            }
+            case R.string.character_title_setting: {
+                Fragment settingCharacterTitleFragment = new SettingCharacterTitleFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterTitleFragment);
                 transaction.addToBackStack(null);
                 break;
             }

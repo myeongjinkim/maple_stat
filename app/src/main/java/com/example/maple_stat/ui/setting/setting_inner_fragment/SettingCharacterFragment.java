@@ -56,6 +56,26 @@ public class SettingCharacterFragment extends Fragment {
         ((SettingActivity) getActivity()).changeFragment(R.string.character_symbol_setting);
     }
 
+    public void pressCharacterGuildButton(View view){
+
+        ((SettingActivity) getActivity()).changeFragment(R.string.character_guild_setting);
+    }
+
+    public void pressCharacterBlessingButton(View view){
+
+        ((SettingActivity) getActivity()).changeFragment(R.string.character_blessing_setting);
+    }
+
+    public void pressCharacterLabelButton(View view){
+
+        ((SettingActivity) getActivity()).changeFragment(R.string.character_label_setting);
+    }
+
+    public void pressCharacterTitleButton(View view){
+
+        ((SettingActivity) getActivity()).changeFragment(R.string.character_title_setting);
+    }
+
 
 
 

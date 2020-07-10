@@ -5,12 +5,16 @@
     <string name="title_calculator">효율 계산기</string>
     <string name="spinner_prompt">-선택-</string>
     <string name="spec_setting">스펙 설정</string>
-    <string name="character_setting">케릭터 설정</string>
 
-    <string name="character_normal_setting">케릭터 기본 설정</string>
-    <string name="character_ability_setting">케릭터 어빌리티 설정</string>
-    <string name="character_tendency_setting">케릭터 성향 설정</string>
-    <string name="character_symbol_setting">케릭터 심볼 설정</string>
+    <string name="character_setting">케릭터 설정</string>
+    <string name="character_normal_setting">기본</string>
+    <string name="character_ability_setting">어빌리티</string>
+    <string name="character_tendency_setting">성향</string>
+    <string name="character_symbol_setting">심볼</string>
+    <string name="character_guild_setting">길드 스킬</string>
+    <string name="character_blessing_setting">0차 축복</string>
+    <string name="character_label_setting">라벨류 캐시장착</string>
+    <string name="character_title_setting">칭호</string>
 
     <string name="item_setting">장비 설정</string>
     <string name="pet_setting">펫 설정</string>
