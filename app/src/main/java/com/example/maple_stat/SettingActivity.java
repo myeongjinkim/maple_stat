@@ -40,6 +40,7 @@ import com.google.android.material.appbar.AppBarLayout;
 
 public class SettingActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,9 +90,15 @@ public class SettingActivity extends AppCompatActivity {
         }
     }
 
+    public void setScrollY0(){
+        ScrollView scrollViewTest = (ScrollView) findViewById(R.id.setting_scrollView);
+        scrollViewTest.setScrollY(0);
+    }
+
     public void setActionBarTitle(int title) {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
+            setScrollY0();
             getSupportActionBar().setTitle(title);
         }
     }
