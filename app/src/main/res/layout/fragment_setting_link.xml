@@ -53,7 +53,7 @@
                     android:background="@drawable/ripple_effect_button_circle"
                     android:gravity="center"
                     android:onClick="@{(view) -> fragment.pressLinkAutoButton(view)}"
-                    android:src="@drawable/ic_auto" />
+                    android:src="@drawable/ic_auto_setting" />
 
             </TableRow>
 
