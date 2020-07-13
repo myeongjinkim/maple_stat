@@ -44,7 +44,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="케릭터"
+                        android:text="@string/character_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressCharacterButton(view)}"/>
@@ -73,7 +73,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="장비"
+                        android:text="@string/item_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressItemButton(view)}"/>
@@ -102,7 +102,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="펫"
+                        android:text="@string/pet_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressPetButton(view)}"/>
@@ -131,7 +131,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="하이퍼스텟"
+                        android:text="@string/hyper_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressHyperButton(view)}"/>
@@ -160,7 +160,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="기타 버프"
+                        android:text="@string/etc_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressEtcButton(view)}"/>
@@ -189,7 +189,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="링크"
+                        android:text="@string/link_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressLinkButton(view)}"/>
@@ -218,7 +218,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="유니온"
+                        android:text="@string/union_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressUnionButton(view)}"/>
@@ -247,7 +247,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="농장"
+                        android:text="@string/farm_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressFarmButton(view)}"/>

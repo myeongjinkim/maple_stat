@@ -68,7 +68,7 @@ public class SettingCharacterFragment extends Fragment {
 
     public void pressCharacterLabelButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.character_label_setting);
+        ((SettingActivity) getActivity()).changeFragment(R.string.character_cash_setting);
     }
 
     public void pressCharacterTitleButton(View view){

@@ -44,7 +44,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="유니온 배치"
+                        android:text="@string/union_arrangement_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressUnionArrangementButton(view)}"/>
@@ -73,7 +73,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="유니온 공격대원"
+                        android:text="@string/union_raid_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressUnionRaidButton(view)}"/>

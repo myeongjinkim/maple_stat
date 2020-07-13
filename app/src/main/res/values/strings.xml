@@ -6,27 +6,26 @@
     <string name="spinner_prompt">-선택-</string>
     <string name="spec_setting">스펙 설정</string>
 
-    <string name="character_setting">케릭터 설정</string>
+    <string name="character_setting">케릭터</string>
     <string name="character_normal_setting">기본</string>
     <string name="character_ability_setting">어빌리티</string>
     <string name="character_tendency_setting">성향</string>
     <string name="character_symbol_setting">심볼</string>
     <string name="character_guild_setting">길드 스킬</string>
     <string name="character_blessing_setting">0차 축복</string>
-    <string name="character_label_setting">라벨류 캐시장착</string>
+    <string name="character_cash_setting">캐시장비</string>
     <string name="character_title_setting">칭호</string>
 
-    <string name="item_setting">장비 설정</string>
-    <string name="pet_setting">펫 설정</string>
-    <string name="hyper_setting">하이퍼스텟 설정</string>
-    <string name="etc_setting">기타 버프 설정</string>
-    <string name="link_setting">링크 설정</string>
+    <string name="item_setting">장비</string>
+    <string name="pet_setting">펫</string>
+    <string name="hyper_setting">하이퍼스텟</string>
+    <string name="etc_setting">기타 버프</string>
+    <string name="link_setting">링크</string>
 
-    <string name="union_setting">유니온 설정</string>
+    <string name="union_setting">유니온</string>
     <string name="union_arrangement_setting">유니온 배치</string>
     <string name="union_raid_setting">유니온 공격대원</string>
 
-
-    <string name="farm_setting">농장 설정</string>
+    <string name="farm_setting">농장</string>
 
 </resources>

@@ -44,7 +44,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="기본"
+                        android:text="@string/character_normal_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressCharacterNormalButton(view)}"/>
@@ -73,7 +73,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="어빌리티"
+                        android:text="@string/character_ability_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressCharacterAbilityButton(view)}"/>
@@ -102,7 +102,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="성향"
+                        android:text="@string/character_tendency_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressCharacterTendencyButton(view)}"/>
@@ -131,7 +131,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="심볼"
+                        android:text="@string/character_symbol_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressCharacterSymbolButton(view)}"/>
@@ -162,7 +162,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="길드 스킬"
+                        android:text="@string/character_guild_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressCharacterGuildButton(view)}"/>
@@ -191,7 +191,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="0차 축복"
+                        android:text="@string/character_blessing_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressCharacterBlessingButton(view)}"/>
@@ -220,7 +220,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="라벨류 캐시장착"
+                        android:text="@string/character_cash_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressCharacterLabelButton(view)}"/>
@@ -249,7 +249,7 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="칭호"
+                        android:text="@string/character_title_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressCharacterTitleButton(view)}"/>

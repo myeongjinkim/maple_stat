@@ -3,11 +3,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:outLine="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterLabelFragment">
+    tools:context="com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterCashFragment">
     <data>
         <variable
             name="fragment"
-            type="com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterLabelFragment"/>
+            type="com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterCashFragment"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/ripple_effect_button_circle"
                     android:gravity="center"
-                    android:onClick="@{(view) -> fragment.pressCharacterLabelDeleteButton(view)}"
+                    android:onClick="@{(view) -> fragment.pressCharacterCashDeleteButton(view)}"
                     android:src="@drawable/ic_delete_nomal" />
 
                 <ImageButton
@@ -49,7 +49,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/ripple_effect_button_circle"
                     android:gravity="center"
-                    android:onClick="@{(view) -> fragment.pressCharacterLabelAddButton(view)}"
+                    android:onClick="@{(view) -> fragment.pressCharacterCashAddButton(view)}"
                     android:src="@drawable/ic_add_nomal" />
 
             </TableRow>

@@ -20,9 +20,9 @@ import android.widget.Toast;
 import com.example.maple_stat.ui.setting.SettingFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterAbilityFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterBlessingFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterCashFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterGuildFragment;
-import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterLabelFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterNormalFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterSymbolFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterTendencyFragment;
@@ -155,9 +155,9 @@ public class SettingActivity extends AppCompatActivity {
                 transaction.addToBackStack(null);
                 break;
             }
-            case R.string.character_label_setting: {
-                Fragment settingCharacterLabelFragment = new SettingCharacterLabelFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterLabelFragment);
+            case R.string.character_cash_setting: {
+                Fragment settingCharacterCashFragment = new SettingCharacterCashFragment();
+                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterCashFragment);
                 transaction.addToBackStack(null);
                 break;
             }
