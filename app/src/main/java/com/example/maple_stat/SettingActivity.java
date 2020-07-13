@@ -15,13 +15,15 @@ import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacter
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterBlessingFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterCashFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterFragment;
-import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterGuildFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterNormalFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterSymbolFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterTendencyFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterTitleFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingEtcFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingFarmFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingGuildActiveFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingGuildFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingGuildPassiveFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingHyperFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingItemFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingLinkFragment;
@@ -124,10 +126,6 @@ public class SettingActivity extends AppCompatActivity {
             Fragment settingCharacterSymbolFragment = new SettingCharacterSymbolFragment();
             transaction.replace(R.id.frameLayout_setting_replace, settingCharacterSymbolFragment);
             transaction.addToBackStack(null);
-        }else if(fragmentTitle.equals(getString(R.string.character_guild_setting))){
-            Fragment settingCharacterGuildFragment = new SettingCharacterGuildFragment();
-            transaction.replace(R.id.frameLayout_setting_replace, settingCharacterGuildFragment);
-            transaction.addToBackStack(null);
         }else if(fragmentTitle.equals(getString(R.string.character_blessing_setting))){
             Fragment settingCharacterBlessingFragment = new SettingCharacterBlessingFragment();
             transaction.replace(R.id.frameLayout_setting_replace, settingCharacterBlessingFragment);
@@ -148,7 +146,19 @@ public class SettingActivity extends AppCompatActivity {
             Fragment settingPetFragment = new SettingPetFragment();
             transaction.replace(R.id.frameLayout_setting_replace, settingPetFragment);
             transaction.addToBackStack(null);
-        }else if(fragmentTitle.equals(getString(R.string.hyper_setting))){
+        }else if(fragmentTitle.equals(getString(R.string.guild_setting))){
+            Fragment settingGuildFragment = new SettingGuildFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingGuildFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.guild_passive_setting))){
+            Fragment settingGuildPassiveFragment = new SettingGuildPassiveFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingGuildPassiveFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.guild_active_setting))){
+            Fragment settingGuildActiveFragment = new SettingGuildActiveFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingGuildActiveFragment);
+            transaction.addToBackStack(null);
+        } else if(fragmentTitle.equals(getString(R.string.hyper_setting))){
             Fragment settingHyperFragment = new SettingHyperFragment();
             transaction.replace(R.id.frameLayout_setting_replace, settingHyperFragment);
             transaction.addToBackStack(null);

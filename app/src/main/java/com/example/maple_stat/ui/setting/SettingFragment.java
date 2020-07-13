@@ -48,6 +48,11 @@ public class SettingFragment extends Fragment {
         ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
+    public void pressGuildButton(View view){
+
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
+    }
+
     public void pressHyperButton(View view){
 
         ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());

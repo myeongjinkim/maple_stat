@@ -57,11 +57,6 @@ public class SettingCharacterFragment extends Fragment {
         ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
-    public void pressCharacterGuildButton(View view){
-
-        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
-    }
-
     public void pressCharacterBlessingButton(View view){
 
         ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());

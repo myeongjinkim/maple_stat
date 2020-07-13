@@ -11,15 +11,15 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
 import com.example.maple_stat.R;
-import com.example.maple_stat.databinding.FragmentSettingCharacterGuildBinding;
+import com.example.maple_stat.databinding.FragmentSettingGuildActiveBinding;
 
 import static android.content.ContentValues.TAG;
 
-public class SettingCharacterGuildFragment extends Fragment {
-    public FragmentSettingCharacterGuildBinding binding;
+public class SettingGuildActiveFragment extends Fragment {
+    public FragmentSettingGuildActiveBinding binding;
 
-    public static SettingCharacterGuildFragment newInstance(){
-        SettingCharacterGuildFragment fragment = new SettingCharacterGuildFragment();
+    public static SettingGuildActiveFragment newInstance(){
+        SettingGuildActiveFragment fragment = new SettingGuildActiveFragment();
         return fragment;
     }
 
@@ -30,7 +30,7 @@ public class SettingCharacterGuildFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_setting_character_guild, container, false);
+        View root = inflater.inflate(R.layout.fragment_setting_guild_active, container, false);
 
         binding = DataBindingUtil.bind(root);
         binding.setFragment(this);
