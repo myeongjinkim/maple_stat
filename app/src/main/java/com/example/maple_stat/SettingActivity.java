@@ -3,19 +3,12 @@ package com.example.maple_stat;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.ViewCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.ui.NavigationUI;
-
-import android.animation.Animator;
-import android.animation.AnimatorInflater;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewTreeObserver;
 import android.widget.ScrollView;
-import android.widget.Toast;
 
 import com.example.maple_stat.ui.setting.SettingFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingCharacterAbilityFragment;
@@ -65,7 +58,7 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
-        changeFragment(R.string.spec_setting);
+        changeFragment(getString(R.string.spec_setting));
 
     }
 
@@ -95,7 +88,7 @@ public class SettingActivity extends AppCompatActivity {
         scrollViewTest.setScrollY(0);
     }
 
-    public void setActionBarTitle(int title) {
+    public void setActionBarTitle(String title) {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             setScrollY0();
@@ -103,124 +96,86 @@ public class SettingActivity extends AppCompatActivity {
         }
     }
 
-    public void changeFragment(int fragmentId){
+    public void changeFragment(String fragmentTitle){
 
-        setActionBarTitle(fragmentId);
+        setActionBarTitle(fragmentTitle);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        switch (fragmentId){
-            case R.string.spec_setting: {
-                Fragment settingFragment = new SettingFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingFragment);
-                break;
-            }
-            case R.string.character_setting: {
-                Fragment settingCharacterFragment = new SettingCharacterFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.character_normal_setting: {
-                Fragment settingCharacterNormalFragment = new SettingCharacterNormalFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterNormalFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.character_ability_setting: {
-                Fragment settingCharacterAbilityFragment = new SettingCharacterAbilityFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterAbilityFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.character_tendency_setting: {
-                Fragment settingCharacterTendencyFragment = new SettingCharacterTendencyFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterTendencyFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.character_symbol_setting: {
-                Fragment settingCharacterSymbolFragment = new SettingCharacterSymbolFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterSymbolFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.character_guild_setting: {
-                Fragment settingCharacterGuildFragment = new SettingCharacterGuildFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterGuildFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.character_blessing_setting: {
-                Fragment settingCharacterBlessingFragment = new SettingCharacterBlessingFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterBlessingFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.character_cash_setting: {
-                Fragment settingCharacterCashFragment = new SettingCharacterCashFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterCashFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.character_title_setting: {
-                Fragment settingCharacterTitleFragment = new SettingCharacterTitleFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingCharacterTitleFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.item_setting: {
-                Fragment settingItemFragment = new SettingItemFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingItemFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.pet_setting: {
-                Fragment settingPetFragment = new SettingPetFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingPetFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.hyper_setting: {
-                Fragment settingHyperFragment = new SettingHyperFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingHyperFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.etc_setting: {
-                Fragment settingEtcFragment = new SettingEtcFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingEtcFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.link_setting: {
-                Fragment settingLinkFragment = new SettingLinkFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingLinkFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.union_setting: {
-                Fragment settingUnionFragment = new SettingUnionFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingUnionFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.union_arrangement_setting: {
-                Fragment settingUnionArrangementFragment = new SettingUnionArrangementFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingUnionArrangementFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.union_raid_setting: {
-                Fragment settingUnionRaidFragment = new SettingUnionRaidFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingUnionRaidFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
-            case R.string.farm_setting: {
-                Fragment settingFarmFragment = new SettingFarmFragment();
-                transaction.replace(R.id.frameLayout_setting_replace, settingFarmFragment);
-                transaction.addToBackStack(null);
-                break;
-            }
+
+        if(fragmentTitle.equals(getString(R.string.spec_setting))){
+            Fragment settingFragment = new SettingFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingFragment);
+        }else if(fragmentTitle.equals(getString(R.string.character_setting))){
+            Fragment settingCharacterFragment = new SettingCharacterFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingCharacterFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.character_normal_setting))){
+            Fragment settingCharacterNormalFragment = new SettingCharacterNormalFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingCharacterNormalFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.character_ability_setting))){
+            Fragment settingCharacterAbilityFragment = new SettingCharacterAbilityFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingCharacterAbilityFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.character_tendency_setting))){
+            Fragment settingCharacterTendencyFragment = new SettingCharacterTendencyFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingCharacterTendencyFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.character_symbol_setting))){
+            Fragment settingCharacterSymbolFragment = new SettingCharacterSymbolFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingCharacterSymbolFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.character_guild_setting))){
+            Fragment settingCharacterGuildFragment = new SettingCharacterGuildFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingCharacterGuildFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.character_blessing_setting))){
+            Fragment settingCharacterBlessingFragment = new SettingCharacterBlessingFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingCharacterBlessingFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.character_cash_setting))){
+            Fragment settingCharacterCashFragment = new SettingCharacterCashFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingCharacterCashFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.character_title_setting))){
+            Fragment settingCharacterTitleFragment = new SettingCharacterTitleFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingCharacterTitleFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.item_setting))){
+            Fragment settingItemFragment = new SettingItemFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingItemFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.pet_setting))){
+            Fragment settingPetFragment = new SettingPetFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingPetFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.hyper_setting))){
+            Fragment settingHyperFragment = new SettingHyperFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingHyperFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.etc_setting))){
+            Fragment settingEtcFragment = new SettingEtcFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingEtcFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.link_setting))){
+            Fragment settingLinkFragment = new SettingLinkFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingLinkFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.union_setting))){
+            Fragment settingUnionFragment = new SettingUnionFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingUnionFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.union_arrangement_setting))){
+            Fragment settingUnionArrangementFragment = new SettingUnionArrangementFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingUnionArrangementFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.union_raid_setting))){
+            Fragment settingUnionRaidFragment = new SettingUnionRaidFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingUnionRaidFragment);
+            transaction.addToBackStack(null);
+        }else if(fragmentTitle.equals(getString(R.string.farm_setting))){
+            Fragment settingFarmFragment = new SettingFarmFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingFarmFragment);
+            transaction.addToBackStack(null);
         }
 
         transaction.commit();

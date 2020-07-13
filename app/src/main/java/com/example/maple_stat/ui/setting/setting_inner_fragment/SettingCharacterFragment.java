@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
@@ -32,48 +33,48 @@ public class SettingCharacterFragment extends Fragment {
 
         binding = DataBindingUtil.bind(root);
         binding.setFragment(this);
-        ((SettingActivity) getActivity()).setActionBarTitle(R.string.character_setting);
+        ((SettingActivity) getActivity()).setActionBarTitle(getString(R.string.character_setting));
 
         return root;
     }
     public void pressCharacterNormalButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.character_normal_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressCharacterAbilityButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.character_ability_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressCharacterTendencyButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.character_tendency_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressCharacterSymbolButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.character_symbol_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressCharacterGuildButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.character_guild_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressCharacterBlessingButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.character_blessing_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressCharacterLabelButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.character_cash_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressCharacterTitleButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.character_title_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
 

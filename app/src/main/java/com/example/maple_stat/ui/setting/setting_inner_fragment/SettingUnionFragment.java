@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
@@ -32,17 +33,17 @@ public class SettingUnionFragment extends Fragment {
 
         binding = DataBindingUtil.bind(root);
         binding.setFragment(this);
-        ((SettingActivity) getActivity()).setActionBarTitle(R.string.union_setting);
+        ((SettingActivity) getActivity()).setActionBarTitle(getString(R.string.union_setting));
 
         return root;
     }
     public void pressUnionArrangementButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.union_arrangement_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressUnionRaidButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.union_raid_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 }

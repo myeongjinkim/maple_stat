@@ -1,9 +1,11 @@
 package com.example.maple_stat.ui.setting;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,48 +29,47 @@ public class SettingFragment extends Fragment {
 
         binding = DataBindingUtil.bind(root);
         binding.setFragment(this);
-        ((SettingActivity) getActivity()).setActionBarTitle(R.string.spec_setting);
+        ((SettingActivity) getActivity()).setActionBarTitle(getString(R.string.spec_setting));
 
         return root;
     }
 
     public void pressCharacterButton(View view){
-
-        ((SettingActivity) getActivity()).changeFragment(R.string.character_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressItemButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.item_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressPetButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.pet_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressHyperButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.hyper_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressEtcButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.etc_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressLinkButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.link_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressUnionButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.union_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 
     public void pressFarmButton(View view){
 
-        ((SettingActivity) getActivity()).changeFragment(R.string.farm_setting);
+        ((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());
     }
 }
