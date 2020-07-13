@@ -160,10 +160,10 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="@string/hyper_setting"
+                        android:text="@string/farm_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
-                        android:onClick="@{(view) -> fragment.pressHyperButton(view)}"/>
+                        android:onClick="@{(view) -> fragment.pressFarmButton(view)}"/>
 
                 </LinearLayout>
 
@@ -193,6 +193,36 @@
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:onClick="@{(view) -> fragment.pressEtcButton(view)}"/>
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:background="@color/colorPrimaryDark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:layout_marginBottom="0.1dp">
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center|left"
+                        android:text="@string/union_setting"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:onClick="@{(view) -> fragment.pressUnionButton(view)}"/>
 
                 </LinearLayout>
 
@@ -247,39 +277,10 @@
                         android:paddingLeft="10dp"
                         android:background="@drawable/ripple_effect_textview"
                         android:gravity="center|left"
-                        android:text="@string/union_setting"
+                        android:text="@string/hyper_setting"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
-                        android:onClick="@{(view) -> fragment.pressUnionButton(view)}"/>
-
-                </LinearLayout>
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_margin="3dp"
-                android:background="@color/colorPrimaryDark">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorWhite"
-                    android:layout_marginBottom="0.1dp">
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
-                        android:layout_weight="1"
-                        android:paddingLeft="10dp"
-                        android:background="@drawable/ripple_effect_textview"
-                        android:gravity="center|left"
-                        android:text="@string/farm_setting"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20dp"
-                        android:onClick="@{(view) -> fragment.pressFarmButton(view)}"/>
+                        android:onClick="@{(view) -> fragment.pressHyperButton(view)}"/>
 
                 </LinearLayout>
 

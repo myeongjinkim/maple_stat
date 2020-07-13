@@ -19,9 +19,9 @@
     <string name="guild_setting">길드 스킬</string>
         <string name="guild_passive_setting">길드 패시브 스킬</string>
         <string name="guild_active_setting">길드 액티브 스킬</string>
+    <string name="farm_setting">농장</string>
     <string name="etc_setting">기타 버프</string>
 
-    <string name="farm_setting">농장</string>
     <string name="union_setting">유니온</string>
         <string name="union_arrangement_setting">유니온 배치</string>
         <string name="union_raid_setting">유니온 공격대원</string>
