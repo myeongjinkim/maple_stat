@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:outLine="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.maple_stat.ui.calculator.calculator_inner_fragment.CalculatorPotentialArmorFragment">
     <data>
         <variable
@@ -36,9 +36,9 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="1.0"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="1.0"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
                 <com.example.maple_stat.custom.CustomSpinner
                     android:layout_width="0dp"
@@ -52,9 +52,9 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="1.0"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="1.0"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
             </TableRow>
 
@@ -74,9 +74,9 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="1.0"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="1.0"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
@@ -88,9 +88,9 @@
                     android:textColor="@color/colorWhite"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="0.5"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="0.5"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
             </TableRow>
 
@@ -110,9 +110,9 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="1.0"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="1.0"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
@@ -124,9 +124,9 @@
                     android:textColor="@color/colorWhite"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="0.5"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="0.5"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
             </TableRow>
 
@@ -146,9 +146,9 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="1.0"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="1.0"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
@@ -160,9 +160,9 @@
                     android:textColor="@color/colorWhite"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="0.5"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="0.5"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
             </TableRow>
 
@@ -215,9 +215,9 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="1.0"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="1.0"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:layout_width="0dp"
@@ -228,9 +228,9 @@
                     android:text="0"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="0.5"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="0.5"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
                 <TextView
                     android:layout_width="0dp"

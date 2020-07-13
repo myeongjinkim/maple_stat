@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:outLine="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.maple_stat.ui.calculator.calculator_inner_fragment.CalculatorAdditionalFragment">
     <data>
         <variable
@@ -20,9 +20,9 @@
             android:layout_weight="1"
             android:shrinkColumns="*"
             android:stretchColumns="*"
-            outLine:layout_constraintEnd_toEndOf="parent"
-            outLine:layout_constraintStart_toStartOf="parent"
-            outLine:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -41,9 +41,9 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="1.0"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="1.0"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
                 <com.example.maple_stat.custom.CustomSpinner
                     android:id="@+id/custom_spinner_part"
@@ -56,9 +56,9 @@
                     android:textColor="@color/colorYellow"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="1.0"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="1.0"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
                 <com.example.maple_stat.custom.CustomTextOutLine
                     android:id="@+id/textView_level"
@@ -71,9 +71,9 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="1.0"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="1.0"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
                 <com.example.maple_stat.custom.CustomSpinner
                     android:id="@+id/custom_spinner_level"
@@ -86,9 +86,9 @@
                     android:textColor="@color/colorYellow"
                     android:textSize="20dp"
                     android:singleLine="true"
-                    outLine:textStroke="true"
-                    outLine:textStrokeWidth="1.0"
-                    outLine:textStrokeColor="@color/colorPrimaryDark" />
+                    app:textStroke="true"
+                    app:textStrokeWidth="1.0"
+                    app:textStrokeColor="@color/colorPrimaryDark" />
 
             </TableRow>
 
