@@ -26,6 +26,7 @@ import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingGuildFrag
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingGuildPassiveFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingHyperFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingItemFragment;
+import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingItemSpecFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingLinkFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingPetFragment;
 import com.example.maple_stat.ui.setting.setting_inner_fragment.SettingUnionArrangementFragment;
@@ -185,6 +186,10 @@ public class SettingActivity extends AppCompatActivity {
         }else if(fragmentTitle.equals(getString(R.string.farm_setting))){
             Fragment settingFarmFragment = new SettingFarmFragment();
             transaction.replace(R.id.frameLayout_setting_replace, settingFarmFragment);
+            transaction.addToBackStack(null);
+        }else{
+            Fragment settingItemSpecFragment = new SettingItemSpecFragment();
+            transaction.replace(R.id.frameLayout_setting_replace, settingItemSpecFragment);
             transaction.addToBackStack(null);
         }
 

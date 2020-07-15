@@ -11,6 +11,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import com.example.maple_stat.R;
 import com.example.maple_stat.SettingActivity;
+import com.example.maple_stat.custom.CustomTextOutLine;
 import com.example.maple_stat.databinding.FragmentSettingItemBinding;
 
 public class SettingItemFragment extends Fragment {
@@ -39,7 +40,7 @@ public class SettingItemFragment extends Fragment {
 
     public void pressItemRing4Button(View view){
 
-        /*((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());*/
+        ((SettingActivity) getActivity()).changeFragment(((CustomTextOutLine)view).getText().toString());
         System.out.println("클맄ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ");
     }
 }
