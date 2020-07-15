@@ -4,11 +4,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import com.example.maple_stat.R;
+import com.example.maple_stat.SettingActivity;
 import com.example.maple_stat.databinding.FragmentSettingItemBinding;
 
 public class SettingItemFragment extends Fragment {
@@ -33,5 +35,11 @@ public class SettingItemFragment extends Fragment {
         binding.setFragment(this);
 
         return root;
+    }
+
+    public void pressItemRing4Button(View view){
+
+        /*((SettingActivity) getActivity()).changeFragment(((Button)view).getText().toString());*/
+        System.out.println("클맄ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ");
     }
 }

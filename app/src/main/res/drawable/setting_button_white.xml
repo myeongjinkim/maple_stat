@@ -9,8 +9,8 @@
     <gradient
         android:type="radial"
         android:startColor="@color/colorWhite"
-        android:centerColor="@color/colorPrimaryLight"
-        android:endColor="@color/colorPrimary"
+        android:centerColor="@color/colorWhite"
+        android:endColor="@color/colorGray"
         android:gradientRadius="90%"/>
 
     <corners

@@ -28,28 +28,30 @@
                 android:padding="4dp"
                 android:columnCount="5"
                 android:rowCount="6"
-                android:background="@color/colorWhite">
+                android:background="@color/colorGray">
 
                 <com.example.maple_stat.custom.SquareLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_blue"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="링4"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -57,22 +59,16 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@color/colorGray"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
                         android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        android:textSize="15dp"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -80,22 +76,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="모자"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -103,22 +101,16 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@color/colorGray"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
                         android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        android:textSize="15dp"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -126,22 +118,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="엠블렘"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -151,22 +145,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="링3"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -174,22 +170,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="펜던트2"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -197,22 +195,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="얼굴장식"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -220,22 +220,16 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@color/colorGray"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
                         android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        android:textSize="15dp"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -243,139 +237,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="뱃지"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
-
-                </com.example.maple_stat.custom.SquareLayout>
-
-
-
-                <com.example.maple_stat.custom.SquareLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
-
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
-
-                </com.example.maple_stat.custom.SquareLayout>
-
-                <com.example.maple_stat.custom.SquareLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
-
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
-
-                </com.example.maple_stat.custom.SquareLayout>
-
-                <com.example.maple_stat.custom.SquareLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
-
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
-
-                </com.example.maple_stat.custom.SquareLayout>
-
-                <com.example.maple_stat.custom.SquareLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
-
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
-
-                </com.example.maple_stat.custom.SquareLayout>
-
-                <com.example.maple_stat.custom.SquareLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
-
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -385,22 +264,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="링2"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -408,22 +289,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="펜턴트1"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -431,22 +314,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="눈장식"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -454,22 +339,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="귀걸이"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -477,139 +364,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="훈장"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
-
-                </com.example.maple_stat.custom.SquareLayout>
-
-
-
-                <com.example.maple_stat.custom.SquareLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
-
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
-
-                </com.example.maple_stat.custom.SquareLayout>
-
-                <com.example.maple_stat.custom.SquareLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
-
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
-
-                </com.example.maple_stat.custom.SquareLayout>
-
-                <com.example.maple_stat.custom.SquareLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
-
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
-
-                </com.example.maple_stat.custom.SquareLayout>
-
-                <com.example.maple_stat.custom.SquareLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
-
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
-
-                </com.example.maple_stat.custom.SquareLayout>
-
-                <com.example.maple_stat.custom.SquareLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
-
-                    <com.example.maple_stat.custom.CustomTextOutLine
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:text="주스텟"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:singleLine="true"
-                        app:textStroke="true"
-                        app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -619,22 +391,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="링1"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -642,22 +416,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="무기"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -665,22 +441,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="상의"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -688,22 +466,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="어깨장식"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
@@ -711,29 +491,254 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:gravity="center"
-                    android:background="@color/colorWhite">
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
                     <com.example.maple_stat.custom.CustomTextOutLine
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorLineGray"
-                        android:layout_margin="4dp"
+                        android:background="@drawable/ripple_effect_textview"
                         android:gravity="center"
-                        android:text="주스텟"
+                        android:text="보조무기"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15dp"
-                        android:singleLine="true"
                         app:textStroke="true"
                         app:textStrokeWidth="1.0"
-                        app:textStrokeColor="#000000" />
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
                 </com.example.maple_stat.custom.SquareLayout>
 
 
 
+                <com.example.maple_stat.custom.SquareLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
 
+                    <com.example.maple_stat.custom.CustomTextOutLine
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center"
+                        android:text="포켓"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp"
+                        app:textStroke="true"
+                        app:textStrokeWidth="1.0"
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
 
+                </com.example.maple_stat.custom.SquareLayout>
+
+                <com.example.maple_stat.custom.SquareLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
+
+                    <com.example.maple_stat.custom.CustomTextOutLine
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center"
+                        android:text="벨트"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp"
+                        app:textStroke="true"
+                        app:textStrokeWidth="1.0"
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
+
+                </com.example.maple_stat.custom.SquareLayout>
+
+                <com.example.maple_stat.custom.SquareLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
+
+                    <com.example.maple_stat.custom.CustomTextOutLine
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center"
+                        android:text="하의"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp"
+                        app:textStroke="true"
+                        app:textStrokeWidth="1.0"
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
+
+                </com.example.maple_stat.custom.SquareLayout>
+
+                <com.example.maple_stat.custom.SquareLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
+
+                    <com.example.maple_stat.custom.CustomTextOutLine
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center"
+                        android:text="장갑"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp"
+                        app:textStroke="true"
+                        app:textStrokeWidth="1.0"
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
+
+                </com.example.maple_stat.custom.SquareLayout>
+
+                <com.example.maple_stat.custom.SquareLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
+
+                    <com.example.maple_stat.custom.CustomTextOutLine
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center"
+                        android:text="망토"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp"
+                        app:textStroke="true"
+                        app:textStrokeWidth="1.0"
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
+
+                </com.example.maple_stat.custom.SquareLayout>
+
+                <com.example.maple_stat.custom.SquareLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@color/colorGray"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
+
+                    <com.example.maple_stat.custom.CustomTextOutLine
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="15dp"/>
+
+                </com.example.maple_stat.custom.SquareLayout>
+
+                <com.example.maple_stat.custom.SquareLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@color/colorGray"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
+
+                    <com.example.maple_stat.custom.CustomTextOutLine
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="15dp"/>
+
+                </com.example.maple_stat.custom.SquareLayout>
+
+                <com.example.maple_stat.custom.SquareLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
+
+                    <com.example.maple_stat.custom.CustomTextOutLine
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center"
+                        android:text="신발"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp"
+                        app:textStroke="true"
+                        app:textStrokeWidth="1.0"
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
+
+                </com.example.maple_stat.custom.SquareLayout>
+
+                <com.example.maple_stat.custom.SquareLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@color/colorGray"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
+
+                    <com.example.maple_stat.custom.CustomTextOutLine
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="15dp"/>
+
+                </com.example.maple_stat.custom.SquareLayout>
+
+                <com.example.maple_stat.custom.SquareLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/setting_button_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:gravity="center">
+
+                    <com.example.maple_stat.custom.CustomTextOutLine
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ripple_effect_textview"
+                        android:gravity="center"
+                        android:text="하트"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp"
+                        app:textStroke="true"
+                        app:textStrokeWidth="1.0"
+                        app:textStrokeColor="#000000"
+                        android:onClick="@{(view) -> fragment.pressItemRing4Button(view)}"
+                        android:clickable="true"/>
+
+                </com.example.maple_stat.custom.SquareLayout>
 
             </GridLayout>
 
